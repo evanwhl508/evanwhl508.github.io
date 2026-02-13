@@ -1,0 +1,6 @@
+# Replace pub-XXXXXXXXXXXXXXXX with your actual AdMob publisher ID.
+# Find it in AdMob dashboard > Settings > Account information > Publisher ID.
+# After replacing, remove this comment block.
+#
+# Format: <domain>, <publisher-id>, <relationship>, <certification-authority-id>
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
