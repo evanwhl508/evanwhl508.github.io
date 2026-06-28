@@ -3,98 +3,476 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evan Wong - App Developer</title>
+  <meta name="description" content="ClearCanvas Apps is an independent developer page for mobile apps including MJ Actuary, a Mahjong scorekeeping companion.">
+  <title>ClearCanvas Apps</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --canvas: #101821;
+      --surface: #172430;
+      --surface-2: #1f3140;
+      --border: #304555;
+      --text: #eef4ef;
+      --muted: #aab8b2;
+      --soft: #7f918a;
+      --gold: #d8b45f;
+      --jade: #58c7a5;
+      --red: #d66b6b;
+      --shadow: rgba(0, 0, 0, 0.28);
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f0f1a;
-      color: #e0e0e0;
       min-height: 100vh;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(88, 199, 165, 0.12), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(216, 180, 95, 0.1), transparent 28rem),
+        var(--canvas);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border: 1px solid rgba(216, 180, 95, 0.45);
+      border-radius: 10px;
+      background: linear-gradient(145deg, rgba(216, 180, 95, 0.18), rgba(88, 199, 165, 0.12));
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .brand-text {
       display: flex;
       flex-direction: column;
+      gap: 1px;
+    }
+
+    .brand-name {
+      font-size: 17px;
+      font-weight: 750;
+    }
+
+    .brand-subtitle {
+      color: var(--soft);
+      font-size: 13px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav a {
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: var(--jade);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+      gap: 44px;
+      align-items: center;
+      padding: 54px 0 48px;
+    }
+
+    .eyebrow {
+      color: var(--jade);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 0;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 720px;
+      color: var(--text);
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 0.98;
+      letter-spacing: 0;
+      margin-bottom: 22px;
+    }
+
+    .hero-copy {
+      max-width: 670px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .button {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 600px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2rem;
-      color: #FFD700;
-      margin-bottom: 0.5rem;
-    }
-    .subtitle {
-      color: #999;
-      margin-bottom: 2.5rem;
-      font-size: 1.1rem;
-    }
-    .app-card {
-      background: #1a1a2e;
-      border-radius: 16px;
-      padding: 2rem;
-      margin-bottom: 1.5rem;
-      text-align: left;
-      border: 1px solid #2a2a3e;
-    }
-    .app-card h2 {
-      font-size: 1.4rem;
-      color: #fff;
-      margin-bottom: 0.3rem;
-    }
-    .app-card .app-subtitle {
-      color: #FFD700;
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-    .app-card p {
-      color: #bbb;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    .app-links a {
-      display: inline-block;
-      color: #4ADE80;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      font-weight: 750;
       text-decoration: none;
-      margin-right: 1.5rem;
-      font-size: 0.95rem;
     }
-    .app-links a:hover { text-decoration: underline; }
-    .contact {
-      margin-top: 2rem;
-      color: #666;
-      font-size: 0.85rem;
+
+    .button.primary {
+      background: var(--gold);
+      color: #1b1a13;
     }
-    .contact a { color: #888; }
+
+    .button.secondary {
+      border-color: var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+    }
+
+    .trust-note {
+      max-width: 680px;
+      border-left: 3px solid var(--jade);
+      padding: 10px 0 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .app-panel {
+      border: 1px solid rgba(216, 180, 95, 0.25);
+      border-radius: 18px;
+      background: rgba(23, 36, 48, 0.82);
+      box-shadow: 0 24px 80px var(--shadow);
+      overflow: hidden;
+    }
+
+    .app-panel-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .app-icon {
+      width: 76px;
+      height: 76px;
+      border-radius: 20px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.32);
+    }
+
+    .app-title {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .app-title span {
+      display: block;
+      color: var(--gold);
+      font-size: 15px;
+      font-weight: 650;
+      margin-top: 5px;
+    }
+
+    .app-panel-body {
+      padding: 24px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+      list-style: none;
+    }
+
+    .feature-list li {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 10px;
+      color: var(--muted);
+    }
+
+    .feature-list strong {
+      color: var(--text);
+      display: block;
+      font-weight: 750;
+    }
+
+    .check {
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 8px;
+      background: rgba(88, 199, 165, 0.12);
+      color: var(--jade);
+      font-weight: 850;
+    }
+
+    .section {
+      padding: 42px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      color: var(--text);
+      font-size: 28px;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-height: 176px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(23, 36, 48, 0.72);
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: var(--text);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .policy-link {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .policy-link span {
+      display: block;
+      color: var(--soft);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 32px 0 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .topbar,
+      .footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 32px;
+      }
+
+      .cards,
+      .policy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Evan Wong</h1>
-    <p class="subtitle">App Developer</p>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="ClearCanvas Apps home">
+        <span class="brand-mark">C</span>
+        <span class="brand-text">
+          <span class="brand-name">ClearCanvas Apps</span>
+          <span class="brand-subtitle">Independent mobile app development</span>
+        </span>
+      </a>
 
-    <div class="app-card">
-      <h2>MJ Actuary</h2>
-      <p class="app-subtitle">麻將精算 — Mahjong Scoring Companion</p>
-      <p>
-        Track your Mahjong game scores with support for HK Mahjong, Taiwan Mahjong,
-        and the HK-Style Taiwan "Pull/Kick" (拉/踢) debt accumulation system.
-        Session statistics, radar charts, and multi-language support included.
-      </p>
-      <div class="app-links">
-        <a href="mj-actuary/privacy.html">Privacy Policy</a>
-        <!-- Uncomment these once your apps are live on the stores:
-        <a href="#">App Store</a>
-        <a href="#">Google Play</a>
-        -->
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#apps">Apps</a>
+        <a href="#support">Support</a>
+        <a href="mj-actuary/privacy.html">Privacy</a>
+        <a href="mj-actuary/terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="apps">
+      <div>
+        <p class="eyebrow">Developer site</p>
+        <h1>Focused tools for real table moments.</h1>
+        <p class="hero-copy">
+          ClearCanvas Apps publishes lightweight mobile utilities built for practical, offline-first workflows. Our first public app is MJ Actuary, a Mahjong scorekeeping companion for live games.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://apps.apple.com/app/id6769773716" target="_blank" rel="noopener">View MJ Actuary on App Store</a>
+          <a class="button secondary" href="mailto:evanwhl508+mjactuary@gmail.com?subject=MJ%20Actuary%20Support">Contact Support</a>
+        </div>
+        <p class="trust-note">
+          MJ Actuary is a scorekeeping utility only. It does not provide gambling, betting, casino games, real-money gameplay, payment processing, prize redemption, online play, or matchmaking.
+        </p>
       </div>
-    </div>
 
-    <p class="contact">
-      Contact: <a href="mailto:mjactuary.dev@gmail.com">mjactuary.dev@gmail.com</a>
-    </p>
-  </div>
+      <aside class="app-panel" aria-label="MJ Actuary app summary">
+        <div class="app-panel-header">
+          <img class="app-icon" src="assets/mj-actuary-icon.png" alt="MJ Actuary app icon" width="76" height="76">
+          <h2 class="app-title">
+            MJ Actuary
+            <span>麻將精算</span>
+          </h2>
+        </div>
+        <div class="app-panel-body">
+          <ul class="feature-list">
+            <li>
+              <span class="check">✓</span>
+              <span><strong>Live Mahjong scoring</strong>Track players, rounds, dealer rotation, self-draws, discards, draws, and bonus pool.</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span><strong>HK-style Taiwan support</strong>Record Pull/Kick relationships, break-cable choices, final settlement, and session history.</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span><strong>Local-first privacy</strong>No account is required. Game data is stored on the user's device.</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>What MJ Actuary Helps With</h2>
+        <p>
+          The app is designed for players who want to keep the table moving without switching between notes, calculators, and memory-heavy house-rule math.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Fast score entry</h3>
+          <p>Tap a player, choose the source, set the Fan value, and save the hand. Undo remains limited to the latest hand to protect scoring integrity.</p>
+        </article>
+        <article class="card">
+          <h3>Complex rule tracking</h3>
+          <p>Dealer streaks, draw behavior, jackpot pool, Pull/Kick debt, and final settlement are handled inside the app's local scoring engine.</p>
+        </article>
+        <article class="card">
+          <h3>Review after the game</h3>
+          <p>History and statistics help players review the current session, including net score, win rate, deal-ins, biggest win, and streaks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="section-header">
+        <h2>Support And Policy Links</h2>
+        <p>
+          For app support, privacy questions, or store/ad network review, use the links below.
+        </p>
+      </div>
+
+      <div class="policy-grid">
+        <a class="policy-link" href="mailto:evanwhl508+mjactuary@gmail.com?subject=MJ%20Actuary%20Support">
+          Support Email
+          <span>evanwhl508+mjactuary@gmail.com</span>
+        </a>
+        <a class="policy-link" href="mj-actuary/privacy.html">
+          Privacy Policy
+          <span>MJ Actuary data practices</span>
+        </a>
+        <a class="policy-link" href="mj-actuary/terms.html">
+          Terms of Service
+          <span>Use, limitations, and disclaimers</span>
+        </a>
+        <a class="policy-link" href="app-ads.txt">
+          app-ads.txt
+          <span>Authorized app ad seller record</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 ClearCanvas Apps. Developed by Evan Wong.</p>
+      <p>Published from Hong Kong. Built for offline companion utility use.</p>
+    </footer>
+  </main>
 </body>
 </html>
