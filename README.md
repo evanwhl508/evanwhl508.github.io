@@ -1,6 +1,6 @@
-# ClearCanvas Apps Developer Site
+# Evan Wong Developer Site
 
-Developer website, app support pages, policy documents, and `app-ads.txt` hosting for ClearCanvas Apps.
+Developer website, app support pages, policy documents, and `app-ads.txt` hosting for products built by Evan Wong.
 
 ## Live URL
 
@@ -12,8 +12,9 @@ This site is used as the public developer website for store listings and ad-netw
 
 It provides:
 
-- A ClearCanvas Apps developer landing page
+- A personal developer landing page for Evan Wong
 - MJ Actuary product/support information
+- ClearCanvas product link
 - App Store link
 - Privacy Policy and Terms of Service
 - Root-level `app-ads.txt` for AdMob verification
