@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Developer page for Evan Wong, an independent developer building MJ Actuary, Maidday, and ClearCanvas.">
-  <title>Evan Wong - Independent Developer</title>
+  <meta name="description" content="Evan Wong is an independent developer in Hong Kong building focused mobile apps and web tools, including MJ Actuary, Maidday, and ClearCanvas.">
+  <title>Evan Wong — Independent Developer</title>
   <style>
     * {
       box-sizing: border-box;
@@ -109,11 +109,8 @@
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-      gap: 44px;
-      align-items: center;
-      padding: 54px 0 48px;
+      max-width: 780px;
+      padding: 56px 0 44px;
     }
 
     .eyebrow {
@@ -126,16 +123,16 @@
     }
 
     h1 {
-      max-width: 720px;
+      max-width: 760px;
       color: var(--text);
-      font-size: clamp(40px, 6vw, 72px);
-      line-height: 0.98;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 0.99;
       letter-spacing: 0;
       margin-bottom: 22px;
     }
 
     .hero-copy {
-      max-width: 670px;
+      max-width: 640px;
       color: var(--muted);
       font-size: 18px;
       margin-bottom: 30px;
@@ -145,7 +142,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 26px;
     }
 
     .button {
@@ -171,83 +167,8 @@
       color: var(--text);
     }
 
-    .trust-note {
-      max-width: 680px;
-      border-left: 3px solid var(--jade);
-      padding: 10px 0 10px 14px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .app-panel {
-      border: 1px solid rgba(216, 180, 95, 0.25);
-      border-radius: 18px;
-      background: rgba(23, 36, 48, 0.82);
-      box-shadow: 0 24px 80px var(--shadow);
-      overflow: hidden;
-    }
-
-    .app-panel-header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 24px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .app-icon {
-      width: 76px;
-      height: 76px;
-      border-radius: 20px;
-      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.32);
-    }
-
-    .app-title {
-      font-size: 24px;
-      font-weight: 800;
-      line-height: 1.1;
-    }
-
-    .app-title span {
-      display: block;
-      color: var(--gold);
-      font-size: 15px;
-      font-weight: 650;
-      margin-top: 5px;
-    }
-
-    .app-panel-body {
-      padding: 24px;
-    }
-
-    .feature-list {
-      display: grid;
-      gap: 14px;
-      list-style: none;
-    }
-
-    .feature-list li {
-      display: grid;
-      grid-template-columns: 28px 1fr;
-      gap: 10px;
-      color: var(--muted);
-    }
-
-    .feature-list strong {
-      color: var(--text);
-      display: block;
-      font-weight: 750;
-    }
-
-    .check {
-      display: grid;
-      width: 28px;
-      height: 28px;
-      place-items: center;
-      border-radius: 8px;
-      background: rgba(88, 199, 165, 0.12);
-      color: var(--jade);
-      font-weight: 850;
+    .button:hover {
+      opacity: 0.92;
     }
 
     .section {
@@ -277,16 +198,27 @@
     }
 
     .card {
-      min-height: 176px;
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
       border: 1px solid var(--border);
       border-radius: 12px;
       background: rgba(23, 36, 48, 0.72);
-      padding: 20px;
+      padding: 22px;
+    }
+
+    .card-kicker {
+      color: var(--jade);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .card h3 {
       color: var(--text);
-      font-size: 18px;
+      font-size: 19px;
       margin-bottom: 8px;
     }
 
@@ -295,26 +227,33 @@
       font-size: 15px;
     }
 
-    .policy-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-    }
-
-    .policy-link {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.03);
-      color: var(--text);
-      padding: 16px;
+    .card-link {
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 14px;
+      color: var(--gold);
+      font-size: 14px;
+      font-weight: 750;
       text-decoration: none;
     }
 
-    .policy-link span {
-      display: block;
-      color: var(--soft);
-      font-size: 13px;
-      margin-top: 4px;
+    .card-link:hover {
+      color: var(--jade);
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .contact a {
+      color: var(--gold);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: var(--jade);
     }
 
     .footer {
@@ -338,14 +277,7 @@
         flex-wrap: wrap;
       }
 
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        padding-top: 32px;
-      }
-
-      .cards,
-      .policy-grid {
+      .cards {
         grid-template-columns: 1fr;
       }
 
@@ -367,116 +299,65 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#apps">Apps &amp; Tools</a>
-        <a href="#support">Support</a>
-        <a href="mj-actuary/privacy.html">Privacy</a>
-        <a href="mj-actuary/terms.html">Terms</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero" id="apps">
-      <div>
-        <p class="eyebrow">Developer site</p>
-        <h1>Practical tools by Evan Wong.</h1>
-        <p class="hero-copy">
-          I build lightweight apps and web tools for focused everyday workflows. My current products include MJ Actuary, a Mahjong scorekeeping companion; Maidday, a salary and leave tracker for Hong Kong domestic helper employers; and ClearCanvas, a web tool for removing image backgrounds.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="https://apps.apple.com/app/id6769773716" target="_blank" rel="noopener">View MJ Actuary on App Store</a>
-          <a class="button secondary" href="https://clearcanvas.app/" target="_blank" rel="noopener">Open ClearCanvas</a>
-          <a class="button secondary" href="mailto:evanwhl508+mjactuary@gmail.com?subject=MJ%20Actuary%20Support">Contact Support</a>
-        </div>
-        <p class="trust-note">
-          MJ Actuary is a scorekeeping utility only. It does not provide gambling, betting, casino games, real-money gameplay, payment processing, prize redemption, online play, or matchmaking.
-        </p>
+    <section class="hero">
+      <p class="eyebrow">Independent developer · Hong Kong</p>
+      <h1>I build focused apps and web tools.</h1>
+      <p class="hero-copy">
+        I'm Evan Wong, an independent developer based in Hong Kong. I design and ship
+        small, dependable products that each do one job well — for everyday tasks,
+        local workflows, and the occasional bit of fun.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#products">See products</a>
+        <a class="button secondary" href="#contact">Get in touch</a>
       </div>
-
-      <aside class="app-panel" aria-label="MJ Actuary app summary">
-        <div class="app-panel-header">
-          <img class="app-icon" src="assets/mj-actuary-icon.png" alt="MJ Actuary app icon" width="76" height="76">
-          <h2 class="app-title">
-            MJ Actuary
-            <span>麻將精算</span>
-          </h2>
-        </div>
-        <div class="app-panel-body">
-          <ul class="feature-list">
-            <li>
-              <span class="check">✓</span>
-              <span><strong>Live Mahjong scoring</strong>Track players, rounds, dealer rotation, self-draws, discards, draws, and bonus pool.</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span><strong>HK-style Taiwan support</strong>Record Pull/Kick relationships, break-cable choices, final settlement, and session history.</span>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <span><strong>Local-first privacy</strong>No account is required. Game data is stored on the user's device.</span>
-            </li>
-          </ul>
-        </div>
-      </aside>
     </section>
 
-    <section class="section">
+    <section class="section" id="products">
       <div class="section-header">
-        <h2>Apps And Web Tools</h2>
-        <p>
-          These are the public products currently linked from this developer site.
-        </p>
+        <h2>Products</h2>
+        <p>Apps and web tools I build and maintain as an independent developer.</p>
       </div>
 
       <div class="cards">
         <article class="card">
+          <p class="card-kicker">iOS app</p>
           <h3>MJ Actuary</h3>
-          <p>A mobile Mahjong scorekeeping companion for live table games, with support for dealer streaks, draw rounds, bonus pool, history, statistics, and HK-style Taiwan Pull/Kick settlement.</p>
+          <p>A Mahjong scorekeeping companion for live table games — dealer streaks, draw rounds, bonus pool, history, statistics, and HK-style Taiwan Pull/Kick settlement. A scorekeeping utility only.</p>
         </article>
         <article class="card">
+          <p class="card-kicker">iOS app</p>
           <h3>Maidday 出糧啦</h3>
-          <p>An iOS salary and leave tracker for Hong Kong foreign domestic helper employers, with calendar-based pay periods, rest days, overtime, leave types, deduction warnings, and salary breakdowns. Available on the <a href="https://apps.apple.com/app/maidday-%E5%87%BA%E7%B3%A7%E5%95%A6/id6785425611" target="_blank" rel="noopener">App Store</a> and at <a href="https://maidday.app/" target="_blank" rel="noopener">maidday.app</a>.</p>
+          <p>A salary and leave tracker for Hong Kong foreign domestic helper employers — calendar-based pay periods, rest days, overtime, leave types, deduction warnings, and salary breakdowns.</p>
+          <a class="card-link" href="https://maidday.app/" target="_blank" rel="noopener">maidday.app →</a>
         </article>
         <article class="card">
+          <p class="card-kicker">Web tool</p>
           <h3>ClearCanvas</h3>
-          <p>A browser-based image tool for removing photo backgrounds. It is a separate web product from MJ Actuary and is available at <a href="https://clearcanvas.app/" target="_blank" rel="noopener">clearcanvas.app</a>.</p>
-        </article>
-        <article class="card">
-          <h3>Developer Support</h3>
-          <p>This page hosts app support links, policy documents, and the root-level app-ads.txt file used for app ownership and ad-network verification.</p>
+          <p>A browser-based tool for removing photo backgrounds quickly, with no sign-up required.</p>
+          <a class="card-link" href="https://clearcanvas.app/" target="_blank" rel="noopener">clearcanvas.app →</a>
         </article>
       </div>
     </section>
 
-    <section class="section" id="support">
+    <section class="section" id="contact">
       <div class="section-header">
-        <h2>Support And Policy Links</h2>
-        <p>
-          For app support, privacy questions, or store/ad network review, use the links below.
-        </p>
+        <h2>Contact</h2>
+        <p>Questions, feedback, or partnership ideas are welcome.</p>
       </div>
-
-      <div class="policy-grid">
-        <a class="policy-link" href="mailto:evanwhl508+mjactuary@gmail.com?subject=MJ%20Actuary%20Support">
-          Support Email
-          <span>evanwhl508+mjactuary@gmail.com</span>
-        </a>
-        <a class="policy-link" href="mj-actuary/privacy.html">
-          Privacy Policy
-          <span>MJ Actuary data practices</span>
-        </a>
-        <a class="policy-link" href="mj-actuary/terms.html">
-          Terms of Service
-          <span>Use, limitations, and disclaimers</span>
-        </a>
-        <a class="policy-link" href="app-ads.txt">
-          app-ads.txt
-          <span>Authorized app ad seller record</span>
-        </a>
-      </div>
+      <p class="contact">
+        Email <a href="mailto:evanwhl508@gmail.com">evanwhl508@gmail.com</a>.
+      </p>
     </section>
 
     <footer class="footer">
       <p>&copy; 2026 Evan Wong. Independent developer.</p>
-      <p>Published from Hong Kong. Built for focused utility use.</p>
+      <p>Published from Hong Kong.</p>
     </footer>
   </main>
 </body>
