@@ -1,0 +1,420 @@
+{
+  "status": "four refinements for review; no final selection",
+  "concept": "Two origins. One continuous identity.",
+  "sources": "Paired SVG arcs and custom cubic terminal curves. No font input to marks.",
+  "wordmark": {
+    "family": "Inter",
+    "Covan": 600,
+    "Labs": 425,
+    "font_size": 24,
+    "navbar_width": 174.16,
+    "navbar_height": 40,
+    "mark_box": 36
+  },
+  "variants": [
+    {
+      "id": "01",
+      "reference": {
+        "id": "01",
+        "label": "Upper sweep",
+        "left": 10,
+        "spine": 30,
+        "y": 50,
+        "upper": 41,
+        "lower": 37,
+        "inner_upper": 28,
+        "inner_lower": 27,
+        "opening_upper": 32,
+        "opening_lower": 36,
+        "offset_upper": 8,
+        "offset_lower": 8
+      },
+      "label": "Cupped opening",
+      "upper_controls": [
+        [
+          75.8,
+          34.0
+        ],
+        [
+          81.0,
+          31.4
+        ]
+      ],
+      "lower_controls": [
+        [
+          79.2,
+          66.8
+        ],
+        [
+          75.7,
+          63.0
+        ]
+      ],
+      "description": "A concave upper cut receives the convex lower return. Their unequal lengths create one gently leaning opening.",
+      "origin_a": "M85.76997 28.27331A41 41 0 0 0 10 50L30 50A28 28 0 0 1 76.36357 37.93636C75.8 34 81 31.4 85.76997 28.27331Z",
+      "origin_b": "M10 50A37 37 0 0 0 76.93363 71.74805C79.2 66.8 75.7 63 71.43074 64.00664A27 27 0 0 1 30 50Z",
+      "merged": "M85.76997 28.27331A41 41 0 0 0 10 50A37 37 0 0 0 76.93363 71.74805C79.2 66.8 75.7 63 71.43074 64.00664A27 27 0 0 1 30 50A28 28 0 0 1 76.36357 37.93636C75.8 34 81 31.4 85.76997 28.27331Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        30,
+        50
+      ],
+      "upper_terminal": [
+        [
+          85.76997194241346,
+          28.2733101664386
+        ],
+        [
+          76.36357002632798,
+          37.936360334765595
+        ]
+      ],
+      "lower_terminal": [
+        [
+          76.93362879187305,
+          71.7480543348215
+        ],
+        [
+          71.43073798790165,
+          64.00663635269987
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 51,
+          "cy": 50,
+          "r": 41
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.83281572999748,
+          "cy": 58,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 47,
+          "cy": 50,
+          "r": 37
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.78759391645525,
+          "cy": 42,
+          "r": 27
+        }
+      ],
+      "upper_cap": "M76.36357 37.93636C75.8 34 81 31.4 85.76997 28.27331",
+      "lower_cap": "M76.93363 71.74805C79.2 66.8 75.7 63 71.43074 64.00664",
+      "confluence_zone": "M50 50L-90.95389 101.30302A150 150 0 0 1 -90.95389 -1.30302Z",
+      "origin_zone": "M50 50L70.87597 -98.54021A150 150 0 0 1 200 50Z"
+    },
+    {
+      "id": "02",
+      "reference": {
+        "id": "01",
+        "label": "Upper sweep",
+        "left": 10,
+        "spine": 30,
+        "y": 50,
+        "upper": 41,
+        "lower": 37,
+        "inner_upper": 28,
+        "inner_lower": 27,
+        "opening_upper": 32,
+        "opening_lower": 36,
+        "offset_upper": 8,
+        "offset_lower": 8
+      },
+      "label": "Shared inflection",
+      "upper_controls": [
+        [
+          79.0,
+          40.0
+        ],
+        [
+          77.5,
+          28.0
+        ]
+      ],
+      "lower_controls": [
+        [
+          78.5,
+          67.4
+        ],
+        [
+          72.0,
+          64.2
+        ]
+      ],
+      "description": "A shallow reverse curve at the upper terminal is answered by a quieter lower transition. The two faces carry the same directional flow.",
+      "origin_a": "M85.76997 28.27331A41 41 0 0 0 10 50L30 50A28 28 0 0 1 76.36357 37.93636C79 40 77.5 28 85.76997 28.27331Z",
+      "origin_b": "M10 50A37 37 0 0 0 76.93363 71.74805C78.5 67.4 72 64.2 71.43074 64.00664A27 27 0 0 1 30 50Z",
+      "merged": "M85.76997 28.27331A41 41 0 0 0 10 50A37 37 0 0 0 76.93363 71.74805C78.5 67.4 72 64.2 71.43074 64.00664A27 27 0 0 1 30 50A28 28 0 0 1 76.36357 37.93636C79 40 77.5 28 85.76997 28.27331Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        30,
+        50
+      ],
+      "upper_terminal": [
+        [
+          85.76997194241346,
+          28.2733101664386
+        ],
+        [
+          76.36357002632798,
+          37.936360334765595
+        ]
+      ],
+      "lower_terminal": [
+        [
+          76.93362879187305,
+          71.7480543348215
+        ],
+        [
+          71.43073798790165,
+          64.00663635269987
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 51,
+          "cy": 50,
+          "r": 41
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.83281572999748,
+          "cy": 58,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 47,
+          "cy": 50,
+          "r": 37
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.78759391645525,
+          "cy": 42,
+          "r": 27
+        }
+      ],
+      "upper_cap": "M76.36357 37.93636C79 40 77.5 28 85.76997 28.27331",
+      "lower_cap": "M76.93363 71.74805C78.5 67.4 72 64.2 71.43074 64.00664",
+      "confluence_zone": "M50 50L-90.95389 101.30302A150 150 0 0 1 -90.95389 -1.30302Z",
+      "origin_zone": "M50 50L70.87597 -98.54021A150 150 0 0 1 200 50Z"
+    },
+    {
+      "id": "03",
+      "reference": {
+        "id": "04",
+        "label": "Inclined opening",
+        "left": 10,
+        "spine": 30,
+        "y": 50,
+        "upper": 40,
+        "lower": 38,
+        "inner_upper": 28,
+        "inner_lower": 27,
+        "opening_upper": 22,
+        "opening_lower": 44,
+        "offset_upper": 8,
+        "offset_lower": 10
+      },
+      "label": "Staggered return",
+      "upper_controls": [
+        [
+          78.0,
+          37.7
+        ],
+        [
+          83.6,
+          36.5
+        ]
+      ],
+      "lower_controls": [
+        [
+          80.0,
+          69.0
+        ],
+        [
+          74.0,
+          62.4
+        ]
+      ],
+      "description": "The upper curve reaches farther; the lower curve returns toward it with a rounded shoulder. The opening is intentionally off-axis.",
+      "origin_a": "M87.08735 35.01574A40 40 0 0 0 10 50L30 50A28 28 0 0 1 79.12862 41.06196C78 37.7 83.6 36.5 87.08735 35.01574Z",
+      "origin_b": "M10 50A38 38 0 0 0 75.33491 76.39702C80 69 74 62.4 68.2093 63.59275A27 27 0 0 1 30 50Z",
+      "merged": "M87.08735 35.01574A40 40 0 0 0 10 50A38 38 0 0 0 75.33491 76.39702C80 69 74 62.4 68.2093 63.59275A27 27 0 0 1 30 50A28 28 0 0 1 79.12862 41.06196C78 37.7 83.6 36.5 87.08735 35.01574Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        30,
+        50
+      ],
+      "upper_terminal": [
+        [
+          87.0873541826715,
+          35.01573626336352
+        ],
+        [
+          79.12861775752816,
+          41.06195961897721
+        ]
+      ],
+      "lower_terminal": [
+        [
+          75.33491241286875,
+          76.3970180774419
+        ],
+        [
+          68.20930422141252,
+          63.59275355392275
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 50,
+          "cy": 50,
+          "r": 40
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.83281572999748,
+          "cy": 58,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 48,
+          "cy": 50,
+          "r": 38
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.07987240796891,
+          "cy": 40,
+          "r": 27
+        }
+      ],
+      "upper_cap": "M79.12862 41.06196C78 37.7 83.6 36.5 87.08735 35.01574",
+      "lower_cap": "M75.33491 76.39702C80 69 74 62.4 68.2093 63.59275",
+      "confluence_zone": "M50 50L-90.95389 101.30302A150 150 0 0 1 -90.95389 -1.30302Z",
+      "origin_zone": "M50 50L70.87597 -98.54021A150 150 0 0 1 200 50Z"
+    },
+    {
+      "id": "04",
+      "reference": {
+        "id": "04",
+        "label": "Inclined opening",
+        "left": 10,
+        "spine": 30,
+        "y": 50,
+        "upper": 40,
+        "lower": 38,
+        "inner_upper": 28,
+        "inner_lower": 27,
+        "opening_upper": 22,
+        "opening_lower": 44,
+        "offset_upper": 8,
+        "offset_lower": 10
+      },
+      "label": "Swept opening",
+      "upper_controls": [
+        [
+          81.0,
+          41.0
+        ],
+        [
+          81.8,
+          36.0
+        ]
+      ],
+      "lower_controls": [
+        [
+          79.2,
+          71.0
+        ],
+        [
+          72.4,
+          62.2
+        ]
+      ],
+      "description": "A restrained reverse curve above and a longer sweep below give the opening a continuous, asymmetric rhythm.",
+      "origin_a": "M87.08735 35.01574A40 40 0 0 0 10 50L30 50A28 28 0 0 1 79.12862 41.06196C81 41 81.8 36 87.08735 35.01574Z",
+      "origin_b": "M10 50A38 38 0 0 0 75.33491 76.39702C79.2 71 72.4 62.2 68.2093 63.59275A27 27 0 0 1 30 50Z",
+      "merged": "M87.08735 35.01574A40 40 0 0 0 10 50A38 38 0 0 0 75.33491 76.39702C79.2 71 72.4 62.2 68.2093 63.59275A27 27 0 0 1 30 50A28 28 0 0 1 79.12862 41.06196C81 41 81.8 36 87.08735 35.01574Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        30,
+        50
+      ],
+      "upper_terminal": [
+        [
+          87.0873541826715,
+          35.01573626336352
+        ],
+        [
+          79.12861775752816,
+          41.06195961897721
+        ]
+      ],
+      "lower_terminal": [
+        [
+          75.33491241286875,
+          76.3970180774419
+        ],
+        [
+          68.20930422141252,
+          63.59275355392275
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 50,
+          "cy": 50,
+          "r": 40
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.83281572999748,
+          "cy": 58,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 48,
+          "cy": 50,
+          "r": 38
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.07987240796891,
+          "cy": 40,
+          "r": 27
+        }
+      ],
+      "upper_cap": "M79.12862 41.06196C81 41 81.8 36 87.08735 35.01574",
+      "lower_cap": "M75.33491 76.39702C79.2 71 72.4 62.2 68.2093 63.59275",
+      "confluence_zone": "M50 50L-90.95389 101.30302A150 150 0 0 1 -90.95389 -1.30302Z",
+      "origin_zone": "M50 50L70.87597 -98.54021A150 150 0 0 1 200 50Z"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "concepts": 1,
+  "variants": 5,
+  "pngs_checked": 50,
+  "sizes": [
+    16,
+    24,
+    32,
+    64,
+    512
+  ],
+  "variants_checked": [
+    {
+      "id": "01",
+      "two_origin_union_matches_exactly": true,
+      "single_connected_ink_component_at_native_sizes": true,
+      "open_counter_at_native_sizes": true,
+      "monochrome_svg_geometry_identical": true,
+      "raster_edge_differences": {
+        "16": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "24": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "32": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "64": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "512": {
+          "pixels": 1,
+          "max_alpha_delta": 64
+        }
+      }
+    },
+    {
+      "id": "02",
+      "two_origin_union_matches_exactly": true,
+      "single_connected_ink_component_at_native_sizes": true,
+      "open_counter_at_native_sizes": true,
+      "monochrome_svg_geometry_identical": true,
+      "raster_edge_differences": {
+        "16": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "24": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "32": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "64": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "512": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        }
+      }
+    },
+    {
+      "id": "03",
+      "two_origin_union_matches_exactly": true,
+      "single_connected_ink_component_at_native_sizes": true,
+      "open_counter_at_native_sizes": true,
+      "monochrome_svg_geometry_identical": true,
+      "raster_edge_differences": {
+        "16": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "24": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "32": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "64": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "512": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        }
+      }
+    },
+    {
+      "id": "04",
+      "two_origin_union_matches_exactly": true,
+      "single_connected_ink_component_at_native_sizes": true,
+      "open_counter_at_native_sizes": true,
+      "monochrome_svg_geometry_identical": true,
+      "raster_edge_differences": {
+        "16": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "24": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "32": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "64": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "512": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        }
+      }
+    },
+    {
+      "id": "05",
+      "two_origin_union_matches_exactly": true,
+      "single_connected_ink_component_at_native_sizes": true,
+      "open_counter_at_native_sizes": true,
+      "monochrome_svg_geometry_identical": true,
+      "raster_edge_differences": {
+        "16": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "24": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "32": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "64": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        },
+        "512": {
+          "pixels": 0,
+          "max_alpha_delta": 0
+        }
+      }
+    }
+  ],
+  "limitation": "Geometric/raster checks verify construction and legibility conditions, not subjective beauty or trademark distinctiveness."
+}

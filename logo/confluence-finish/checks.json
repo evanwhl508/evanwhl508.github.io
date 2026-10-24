@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "selected_base": "A / Balanced",
+  "refinements": 3,
+  "pngs_checked": 75,
+  "sizes": [
+    16,
+    24,
+    32,
+    64,
+    256
+  ],
+  "a1_exact_geometry_and_native_benchmark": true,
+  "a2_silhouette_unchanged": true,
+  "a3_width_reduction_percent": 2.5,
+  "a3_lower_return_preserved_under_scaling": true,
+  "variants": [
+    {
+      "id": "a1",
+      "aqua_area_percent": 7.352,
+      "identical_colorway_masks": true,
+      "native_counter_open_and_ink_connected": true
+    },
+    {
+      "id": "a2",
+      "aqua_area_percent": 6.323,
+      "identical_colorway_masks": true,
+      "native_counter_open_and_ink_connected": true
+    },
+    {
+      "id": "a3",
+      "aqua_area_percent": 6.317,
+      "identical_colorway_masks": true,
+      "native_counter_open_and_ink_connected": true
+    }
+  ]
+}

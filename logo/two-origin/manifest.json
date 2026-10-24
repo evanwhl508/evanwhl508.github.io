@@ -1,0 +1,370 @@
+{
+  "status": "unapproved monochrome studies",
+  "concept": "Two origins forming one C",
+  "mark_source": "SVG circular geometry; no font outlines",
+  "construction": "Two eccentric circular ribbons, shared outer tangent, single inner cusp; merged without a seam",
+  "navbar_width": 190.51578,
+  "navbar_height": 40,
+  "variants": [
+    {
+      "id": "01",
+      "label": "Upper sweep",
+      "left": 10,
+      "spine": 30,
+      "y": 50,
+      "upper": 41,
+      "lower": 37,
+      "inner_upper": 28,
+      "inner_lower": 27,
+      "opening_upper": 32,
+      "opening_lower": 36,
+      "offset_upper": 8,
+      "offset_lower": 8,
+      "origin_a": "M85.76997 28.27331A41 41 0 0 0 10 50L30 50A28 28 0 0 1 76.36357 37.93636Z",
+      "origin_b": "M10 50A37 37 0 0 0 76.93363 71.74805L71.43074 64.00664A27 27 0 0 1 30 50Z",
+      "merged": "M85.76997 28.27331A41 41 0 0 0 10 50A37 37 0 0 0 76.93363 71.74805L71.43074 64.00664A27 27 0 0 1 30 50A28 28 0 0 1 76.36357 37.93636Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        30,
+        50
+      ],
+      "upper_terminal": [
+        [
+          85.76997194241346,
+          28.2733101664386
+        ],
+        [
+          76.36357002632798,
+          37.936360334765595
+        ]
+      ],
+      "lower_terminal": [
+        [
+          76.93362879187305,
+          71.7480543348215
+        ],
+        [
+          71.43073798790165,
+          64.00663635269987
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 51,
+          "cy": 50,
+          "r": 41
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.83281572999748,
+          "cy": 58,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 47,
+          "cy": 50,
+          "r": 37
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.78759391645525,
+          "cy": 42,
+          "r": 27
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "label": "Lower sweep",
+      "left": 11,
+      "spine": 31,
+      "y": 50,
+      "upper": 39,
+      "lower": 40,
+      "inner_upper": 27,
+      "inner_lower": 29,
+      "opening_upper": 36,
+      "opening_lower": 32,
+      "offset_upper": 10,
+      "offset_lower": 9,
+      "origin_a": "M81.55166 27.07638A39 39 0 0 0 11 50L31 50A27 27 0 0 1 72.60146 38.64498Z",
+      "origin_b": "M11 50A40 40 0 0 0 84.92192 71.19677L77.63671 62.84921A29 29 0 0 1 31 50Z",
+      "merged": "M81.55166 27.07638A39 39 0 0 0 11 50A40 40 0 0 0 84.92192 71.19677L77.63671 62.84921A29 29 0 0 1 31 50A27 27 0 0 1 72.60146 38.64498Z",
+      "outer_join": [
+        11,
+        50
+      ],
+      "inner_join": [
+        31,
+        50
+      ],
+      "upper_terminal": [
+        [
+          81.55166278062295,
+          27.076375160593546
+        ],
+        [
+          72.60146377732234,
+          38.644976735575625
+        ]
+      ],
+      "lower_terminal": [
+        [
+          84.92192384625704,
+          71.1967705693282
+        ],
+        [
+          77.63670611778561,
+          62.84921430031622
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 50,
+          "cy": 50,
+          "r": 39
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.07987240796891,
+          "cy": 60,
+          "r": 27
+        },
+        {
+          "label": "Lower outer",
+          "cx": 51,
+          "cy": 50,
+          "r": 40
+        },
+        {
+          "label": "Lower inner",
+          "cx": 58.56809750418044,
+          "cy": 41,
+          "r": 29
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "label": "Deeper counter",
+      "left": 10,
+      "spine": 33,
+      "y": 50,
+      "upper": 40,
+      "lower": 38,
+      "inner_upper": 28,
+      "inner_lower": 27,
+      "opening_upper": 32,
+      "opening_lower": 36,
+      "offset_upper": 11,
+      "offset_lower": 10,
+      "origin_a": "M83.92192 28.80323A40 40 0 0 0 10 50L33 50A28 28 0 0 1 75.99508 38.94177Z",
+      "origin_b": "M10 50A38 38 0 0 0 78.74265 72.33584L72.61826 62.7516A27 27 0 0 1 33 50Z",
+      "merged": "M83.92192 28.80323A40 40 0 0 0 10 50A38 38 0 0 0 78.74265 72.33584L72.61826 62.7516A27 27 0 0 1 33 50A28 28 0 0 1 75.99508 38.94177Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        33,
+        50
+      ],
+      "upper_terminal": [
+        [
+          83.92192384625704,
+          28.803229430671806
+        ],
+        [
+          75.99507632013335,
+          38.94177062246067
+        ]
+      ],
+      "lower_terminal": [
+        [
+          78.742645786248,
+          72.33583958711398
+        ],
+        [
+          72.6182639162498,
+          62.75159713848559
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 50,
+          "cy": 50,
+          "r": 40
+        },
+        {
+          "label": "Upper inner",
+          "cx": 58.74878637916747,
+          "cy": 61,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 48,
+          "cy": 50,
+          "r": 38
+        },
+        {
+          "label": "Lower inner",
+          "cx": 58.07987240796891,
+          "cy": 40,
+          "r": 27
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "label": "Inclined opening",
+      "left": 10,
+      "spine": 30,
+      "y": 50,
+      "upper": 40,
+      "lower": 38,
+      "inner_upper": 28,
+      "inner_lower": 27,
+      "opening_upper": 22,
+      "opening_lower": 44,
+      "offset_upper": 8,
+      "offset_lower": 10,
+      "origin_a": "M87.08735 35.01574A40 40 0 0 0 10 50L30 50A28 28 0 0 1 79.12862 41.06196Z",
+      "origin_b": "M10 50A38 38 0 0 0 75.33491 76.39702L68.2093 63.59275A27 27 0 0 1 30 50Z",
+      "merged": "M87.08735 35.01574A40 40 0 0 0 10 50A38 38 0 0 0 75.33491 76.39702L68.2093 63.59275A27 27 0 0 1 30 50A28 28 0 0 1 79.12862 41.06196Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        30,
+        50
+      ],
+      "upper_terminal": [
+        [
+          87.0873541826715,
+          35.01573626336352
+        ],
+        [
+          79.12861775752816,
+          41.06195961897721
+        ]
+      ],
+      "lower_terminal": [
+        [
+          75.33491241286875,
+          76.3970180774419
+        ],
+        [
+          68.20930422141252,
+          63.59275355392275
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 50,
+          "cy": 50,
+          "r": 40
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.83281572999748,
+          "cy": 58,
+          "r": 28
+        },
+        {
+          "label": "Lower outer",
+          "cx": 48,
+          "cy": 50,
+          "r": 38
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.07987240796891,
+          "cy": 40,
+          "r": 27
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "label": "Open crown",
+      "left": 10,
+      "spine": 31,
+      "y": 50,
+      "upper": 40,
+      "lower": 38,
+      "inner_upper": 27,
+      "inner_lower": 26,
+      "opening_upper": 40,
+      "opening_lower": 30,
+      "offset_upper": 10,
+      "offset_lower": 8,
+      "origin_a": "M80.64178 24.2885A40 40 0 0 0 10 50L31 50A27 27 0 0 1 71.38048 37.75385Z",
+      "origin_b": "M10 50A38 38 0 0 0 80.90897 69L73.46774 61.01786A26 26 0 0 1 31 50Z",
+      "merged": "M80.64178 24.2885A40 40 0 0 0 10 50A38 38 0 0 0 80.90897 69L73.46774 61.01786A26 26 0 0 1 31 50A27 27 0 0 1 71.38048 37.75385Z",
+      "outer_join": [
+        10,
+        50
+      ],
+      "inner_join": [
+        31,
+        50
+      ],
+      "upper_terminal": [
+        [
+          80.64177772475912,
+          24.28849561253843
+        ],
+        [
+          71.38048446490467,
+          37.75384818259229
+        ]
+      ],
+      "lower_terminal": [
+        [
+          80.90896534380867,
+          69.0
+        ],
+        [
+          73.46773676052285,
+          61.0178575705487
+        ]
+      ],
+      "circles": [
+        {
+          "label": "Upper outer",
+          "cx": 50,
+          "cy": 50,
+          "r": 40
+        },
+        {
+          "label": "Upper inner",
+          "cx": 56.07987240796891,
+          "cy": 60,
+          "r": 27
+        },
+        {
+          "label": "Lower outer",
+          "cx": 48,
+          "cy": 50,
+          "r": 38
+        },
+        {
+          "label": "Lower inner",
+          "cx": 55.73863375370596,
+          "cy": 42,
+          "r": 26
+        }
+      ]
+    }
+  ]
+}

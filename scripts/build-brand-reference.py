@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[1]
+BASE='/public/brand/'
+def img(path,size=128,alt='Covan Labs mark',cls=''):
+    return f'<img src="{BASE+path}" width="{size}" alt="{alt}" class="{cls}">'
+def sample(path,title,light=False,size=128):
+    return f'<figure class="brand-sample {"brand-light" if light else ""}"><div class="brand-art">{img(path,size)}</div><figcaption>{title}</figcaption><a href="{BASE+path}" download>Download SVG ↓</a></figure>'
+html='''<section class="hero brand-intro"><p class="eyebrow">Covan Labs / Identity</p><h1>Two origins.<br>One continuous identity.</h1><p class="hero-copy">The Confluence C brings precision and flow together. Its aqua confluence represents Cobie and Evan coming together as Covan.</p><div class="actions"><a class="button primary" href="/public/brand/covan-brand-assets.zip" download>Download identity kit ↓</a><a class="button secondary" href="#usage">Usage guidelines</a></div></section>
+<section class="section" aria-labelledby="master-title"><div class="section-header"><div><p class="eyebrow">01 / Master</p><h2 id="master-title">Polish B — Confluence C</h2></div><p>The approved silhouette. Use the supplied artwork without redrawing or adjusting its confluence.</p></div><div class="brand-grid">'''
+html+=sample('logo/covan-mark-primary.svg','Primary · cool white + aqua',size=256)+sample('logo/covan-mark-light.svg','Light · navy + dark aqua',True,256)
+html+='</div><div class="brand-grid brand-grid-three">'
+for name,title,light in [('white','Monochrome · cool white',False),('navy','Monochrome · navy',True),('black','Print · pure black',True)]:html+=sample(f'logo/covan-mark-{name}.svg',title,light)
+html+='''</div></section><section class="section" aria-labelledby="lockup-title"><div class="section-header"><div><p class="eyebrow">02 / Wordmark</p><h2 id="lockup-title">A quiet counterpart.</h2></div><p>Inter 600 for Covan, 425 for Labs. The mark carries the character; generous spacing lets it breathe.</p></div><div class="brand-grid">'''
+for kind,name,light in [('horizontal','dark',False),('horizontal','light',True),('stacked','dark',False),('localized','light',True)]:
+    html+=sample(f'logo/covan-logo-{kind}-{name}.svg',kind.capitalize()+(' · 高凡' if kind=='localized' else ''),light,240 if kind!='stacked' else 180)
+html+='''</div><p class="fine-print">Horizontal lockup: minimum 160px wide; recommended navbar width 184px at 40px artboard height. The visible gap is about 0.56× the visible mark height. Keep 高凡 secondary and use it only in localized contexts.</p><details class="brand-details"><summary>Typography comparison at navbar size</summary><div class="brand-grid">'''
+for family in ['Inter','Manrope']:html+=sample(f'proofs/wordmark-{family.lower()}.svg',family+' · 600 / 425',size=178)
+html+='''</div><p>Inter keeps the existing wordmark’s precise rhythm and restrained character. Manrope is retained as a comparison only.</p></details></section>
+<section class="section" id="usage" aria-labelledby="space-title"><div class="section-header"><div><p class="eyebrow">03 / Placement</p><h2 id="space-title">Room to breathe.</h2></div><p>x is the thickness of the left-middle stroke: 70.656 units on the 512-unit master artboard. Leave at least 1x around the visible artwork.</p></div><div class="brand-grid"><figure class="brand-sample"><div class="brand-art">'''+img('proofs/clear-space.svg',320)+'''</div><figcaption>Mark · 1x minimum on all sides</figcaption></figure><figure class="brand-sample"><div class="brand-art"><div class="brand-lock-clear">'''+img('logo/covan-logo-horizontal-dark.svg',240)+'''</div></div><figcaption>Lockup · 1x around mark and wordmark together</figcaption></figure></div><p>Measure clear space from visible ink, not from the SVG canvas edge. Artwork canvases do not automatically include the full exclusion zone. At a 36px navbar mark artboard, x is approximately 5px.</p><div class="brand-grid"><div class="card"><h3>Master</h3><p>64px and above for standalone use. The approved horizontal lockup is also validated at a 35–40px lockup artboard height. Keep it at least 160px wide; use a mark-only Micro C below that.</p></div><div class="card"><h3>Micro</h3><p>16–48px for compact UI. The counter and terminal clearance are simplified for recognition. It is a responsive derivative, not a replacement master.</p></div></div></section>
+<section class="section" aria-labelledby="micro-title"><div class="section-header"><div><p class="eyebrow">04 / Responsive</p><h2 id="micro-title">Clarity at small sizes.</h2></div><p>The favicon uses the monochrome Micro C on a navy tile. Both candidates are retained below at native pixel sizes, against dark and light browser chrome.</p></div><div class="brand-grid">'''
+for light in [False,True]:
+    html+=f'<div class="brand-sample {"brand-light" if light else ""}">'
+    for candidate,title in [('a','A · Two-color'),('b','B · Monochrome')]:
+        html+=f'<p>{title}</p><div class="brand-size-row">'
+        for size in [16,24,32,48]:html+=f'<figure>{img(f"favicon/candidate-{candidate}.svg",size)}<figcaption>{size}px</figcaption></figure>'
+        html+='</div>'
+    html+='</div>'
+html+='''</div><p>The monochrome favicon gives the tiny left spine one continuous tone. The two-color Micro C remains available for compact UI where aqua is useful.</p><div class="brand-grid">'''
+html+=sample('micro/covan-mark-micro-primary.svg','Micro · two-color',size=64)+sample('micro/covan-mark-micro-monochrome.svg','Micro · monochrome',size=64)
+html+='''</div></section><section class="section" aria-labelledby="palette-title"><p class="eyebrow">05 / Palette</p><h2 id="palette-title">Navy. Silver. Aqua.</h2><div class="brand-palette">'''
+for cls,title,value in [('navy','Deep navy','#08111F'),('white','Cool white','#F4F7FA'),('silver','Silver','#9EADBD'),('aqua','Aqua','#39C6C8'),('teal','Light-background aqua','#15999C')]:html+=f'<div class="brand-swatch brand-swatch-{cls}"><span aria-hidden="true"></span><strong>{title}</strong><code>{value}</code></div>'
+html+='''</div><p>Aqua is a secondary accent. On light backgrounds use dark aqua for clearer graphical contrast; do not use either aqua as small text without a contrast check.</p></section>
+<section class="section" aria-labelledby="avoid-title"><p class="eyebrow">06 / Care</p><h2 id="avoid-title">Keep the identity intact.</h2><div class="brand-grid brand-grid-three">'''
+for cls,title in [('stretch','Do not stretch or alter proportions'),('rotate','Do not rotate'),('recolor','Do not recolor or make the whole mark aqua'),('shadow','Do not add shadows or glow'),('contrast','Do not use low-contrast backgrounds'),('small','Do not use the master at tiny sizes')]:
+    html+=f'<figure class="brand-sample incorrect incorrect-{cls}"><div class="brand-art">{img("logo/covan-mark-primary.svg",96)}</div><figcaption>× {title}</figcaption></figure>'
+html+='''</div><p>Do not add gradients or outlines, rearrange internal geometry, alter the confluence, or attach new symbols. Use the official light and monochrome assets when the primary artwork is unsuitable.</p></section>
+<section class="section" aria-labelledby="downloads-title"><p class="eyebrow">07 / Assets</p><h2 id="downloads-title">Ready to use.</h2><p>The kit includes portable SVGs, transparent PNGs at 512 / 256 / 128 / 64 / 32px widths, favicons, avatars, social artwork, editable sources and font licenses.</p><div class="actions"><a class="button primary" href="/public/brand/covan-brand-assets.zip" download>Download complete kit ↓</a><a class="button secondary" href="/public/brand/social/covan-avatar-1024.png" download>Avatar · 1024px ↓</a><a class="button secondary" href="/public/brand/social/covan-og-brand.png" download>Open Graph · 1200 × 630 ↓</a></div><p class="fine-print">Small PNG exports are provided for compatibility; use the Micro assets for small interfaces. Official name: Covan Labs. Chinese name: 高凡.</p></section>'''
+p=ROOT/'site/pages/brand/index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(html)

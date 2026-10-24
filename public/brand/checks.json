@@ -1,0 +1,13 @@
+{
+  "master": "Exact path scaling and pixel identity PASS",
+  "portable_svgs": 24,
+  "pngs_checked": 142,
+  "contrast": {
+    "#15999C/#F6F8FB": 3.25,
+    "#39C6C8/#08111F": 9.08,
+    "#F4F7FA/#08111F": 17.59,
+    "#9EADBD/#101C2C": 7.49
+  },
+  "favicon": "B \u2014 monochrome",
+  "status": "PASS"
+}

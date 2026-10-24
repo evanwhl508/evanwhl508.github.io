@@ -1,0 +1,22 @@
+async(page)=>{
+ const origin='http://127.0.0.1:4173';const ctx=await page.context().browser().newContext({deviceScaleFactor:1,reducedMotion:'reduce'});const p=await ctx.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));const result=[];
+ for(const width of [320,360,390,768,1440]){
+  await p.setViewportSize({width,height:1000});
+  for(const route of ['/','/theme2/','/brand/','/theme2/brand/']){
+   await p.goto(origin+route);await p.evaluate(()=>document.fonts.ready);await p.locator('img').evaluateAll(is=>Promise.all(is.map(i=>i.decode())));
+   const state=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,images:[...document.images].every(i=>i.complete&&i.naturalWidth>0),h1:document.querySelectorAll('h1').length,logo:document.querySelector('.brand img').getBoundingClientRect().width,cardTransition:getComputedStyle(document.querySelector('.card')||document.body).transitionDuration}));
+   if(state.overflow||!state.images||state.h1!==1||(width>=360&&state.logo<160)||(width<360&&Math.abs(state.logo-32)>.1))throw new Error(JSON.stringify({width,route,state}));
+   result.push({width,route,...state});
+   if((width===390||width===1440)&&(route==='/'||route==='/brand/'))await p.screenshot({path:`output/playwright/brand-production-${route==='/'?'home':'reference'}-${width}.png`,fullPage:true});
+  }
+ }
+ await p.setViewportSize({width:390,height:844});await p.goto(origin+'/theme2/brand/');await p.keyboard.press('Tab');const first=await p.evaluate(()=>({text:document.activeElement.textContent,outline:getComputedStyle(document.activeElement).outlineStyle}));if(!first.text.includes('Skip')||first.outline==='none')throw new Error('Skip/focus failed');await p.keyboard.press('Enter');await p.keyboard.press('Tab');
+ await p.locator('.mobile-nav summary').focus();await p.keyboard.press('Enter');if(!await p.locator('.mobile-nav').evaluate(d=>d.open))throw new Error('Menu keyboard failed');await p.keyboard.press('Escape');if(await p.locator('.mobile-nav').evaluate(d=>d.open))throw new Error('Escape failed');
+ const links=await p.locator('header nav a,footer nav a').evaluateAll(as=>as.map(a=>a.getAttribute('href')));if(links.some(h=>h.startsWith('/')&&!h.startsWith('/theme2/')))throw new Error('Theme escaped');
+ // Inspect actual-size typography, minimum lockup, and localized outlines.
+ await p.setViewportSize({width:1000,height:700});
+ await p.setContent(`<style>body{background:#08111F;color:#F4F7FA;font:16px system-ui;margin:40px}section{display:grid;grid-template-columns:140px 1fr;align-items:center;min-height:100px}img{display:block}.light{background:#F6F8FB;padding:24px;color:#08111F}</style><section>Inter · 184px<img width="184" src="${origin}/public/brand/proofs/wordmark-inter.svg"></section><section>Manrope · 184px<img width="184" src="${origin}/public/brand/proofs/wordmark-manrope.svg"></section><section>Minimum · 160px<img width="160" src="${origin}/public/brand/logo/covan-logo-horizontal-dark.svg"></section><section>Localized<img width="240" src="${origin}/public/brand/logo/covan-logo-localized-dark.svg"></section><section class="light">Light<img width="240" src="${origin}/public/brand/logo/covan-logo-localized-light.svg"></section>`);await p.locator('img').evaluateAll(is=>Promise.all(is.map(i=>i.decode())));await p.screenshot({path:'output/playwright/production-wordmarks.png'});
+ await p.setViewportSize({width:1000,height:780});const row=(name,label,light)=>`<section class="${light?'light':''}"><span>${label}</span>${[16,24,32,48].map(s=>`<div><img width="${s}" src="${origin}/public/brand/favicon/candidate-${name}-${s}.png"><p>${s}px</p></div>`).join('')}</section>`;
+ await p.setContent(`<style>body{margin:0;background:#08111F;color:#F4F7FA;font:16px system-ui;padding:40px}section{display:grid;grid-template-columns:170px repeat(4,100px);align-items:center;padding:24px;min-height:100px}.light{background:#F6F8FB;color:#08111F}p{font-size:12px}</style><h2>Native-size favicon comparison</h2>${row('a','A · Two-color',false)}${row('b','B · Monochrome',false)}${row('a','A · Two-color',true)}${row('b','B · Monochrome',true)}`);await p.locator('img').evaluateAll(is=>Promise.all(is.map(i=>i.decode())));await p.screenshot({path:'output/playwright/production-favicons.png'});
+ if(errors.length)throw new Error(errors.join('\n'));await ctx.close();await page.goto(origin+'/brand/');return {layouts:result,keyboard:first,consoleErrors:errors};
+}

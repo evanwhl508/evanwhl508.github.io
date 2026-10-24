@@ -1,0 +1,458 @@
+{
+  "status": "unselected exploration",
+  "supersedes": "Modular C A/B/C refinements",
+  "sizes": [
+    16,
+    24,
+    32,
+    64,
+    512
+  ],
+  "palette": {
+    "dark": [
+      "#F4F7FA",
+      "#39C6C8"
+    ],
+    "light": [
+      "#08111F",
+      "#39C6C8"
+    ],
+    "white": [
+      "#FFFFFF",
+      "#FFFFFF"
+    ],
+    "navy": [
+      "#08111F",
+      "#08111F"
+    ]
+  },
+  "assessment": "subjective design judgment; not trademark clearance",
+  "concepts": [
+    {
+      "id": "01",
+      "name": "Confluence",
+      "group": "Two-origin convergence",
+      "parts": [
+        [
+          "Cobie origin",
+          "M20 13C13 17 13 25 19 31L39 49L24 68C19 75 20 84 27 88C34 92 42 88 46 82L60 60C66 51 63 41 56 35L32 15C28 11 24 11 20 13Z"
+        ],
+        [
+          "Evan origin",
+          "M77 13C84 11 90 17 87 24L69 66C63 81 51 89 35 89L36 73C45 73 52 67 56 58L71 21C72 17 74 14 77 13Z"
+        ]
+      ],
+      "accent": "M40 39L59 34L69 51L59 66L49 62Z",
+      "notes": [
+        "Two separate arrivals",
+        "One shared bend",
+        "Aqua: the joined passage"
+      ],
+      "story": "Cobie and Evan take different paths into one shared practice.",
+      "impression": "A compact, flowing junction with two open arrivals and one rounded return.",
+      "beauty": "Unequal upper gestures balance a generous lower curve. The rounded ends soften the diagonal without losing its direction.",
+      "hidden": "Trace either upper end: the two paths become the same material at the waist. They are origins, not two finished objects linked together.",
+      "specific": "The two arrivals refer to Cobie and Evan; the shared lower passage is the new name, Covan. Their unequal trajectories express two distinct contributions without assigning roles to either person.",
+      "portability": "The junction could represent collaboration elsewhere. Its name-origin reading and asymmetric return give it a Covan rationale; neither makes the silhouette legally exclusive.",
+      "aqua": "The shared waist marks the passage where two sources become one identity. Both origins remain silver, so the accent does not privilege one person.",
+      "watch": "The overall gesture may read as a lowercase y. Judge that association before relying on the origin story.",
+      "letters": "No letter encoding is claimed. The two-origin structure carries the idea.",
+      "scores": {
+        "First-sight beauty": 8,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 9,
+        "Discoverability": 8,
+        "Timelessness": 8,
+        "Small-size readability": 8,
+        "Monochrome performance": 9,
+        "Memorability": 8,
+        "Visual balance": 8,
+        "Ownability": 7
+      }
+    },
+    {
+      "id": "02",
+      "name": "Common Ground",
+      "group": "Two-origin convergence",
+      "parts": [
+        [
+          "Cobie origin",
+          "M14 52C14 25 30 12 50 12C70 12 86 25 86 52H70C70 35 62 27 50 27C38 27 30 35 30 52V76H14Z"
+        ],
+        [
+          "Evan origin",
+          "M35 47H51V61C51 69 57 74 65 74C71 74 77 71 83 66V84C77 88 71 90 64 90C46 90 35 78 35 61Z"
+        ]
+      ],
+      "accent": "M34 54H55V78H34Z",
+      "notes": [
+        "A broad enclosing gesture",
+        "A second gesture turns inside it",
+        "Aqua: where the second origin takes shape"
+      ],
+      "story": "Two names find room inside one independent lab.",
+      "impression": "A quiet nested form: a broad upper shelter and a shorter, turned inner gesture.",
+      "beauty": "The two radii and unequal heights make a balanced, off-centre silhouette. A clear internal channel lets the forms breathe.",
+      "hidden": "One origin defines the outside; the second turns inside it. Together they establish a shared space without becoming matching halves.",
+      "specific": "Covan is a new name with room for both Cobie and Evan. The outside/inside relation describes co-authorship, not a corporate hierarchy.",
+      "portability": "Enclosure is a transferable idea. The deliberate two-gesture reading supports the name story, but this direction relies more on repeated brand use than on a literal letter signature.",
+      "aqua": "Aqua follows the inner turn: the point where the second gesture begins to complete the first.",
+      "watch": "Some viewers may see a lowercase letter pair. The inner channel is the detail to compare at 16px.",
+      "letters": "The shapes are not intended as a readable CE monogram.",
+      "scores": {
+        "First-sight beauty": 8,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 8,
+        "Discoverability": 7,
+        "Timelessness": 9,
+        "Small-size readability": 8,
+        "Monochrome performance": 9,
+        "Memorability": 7,
+        "Visual balance": 9,
+        "Ownability": 6
+      }
+    },
+    {
+      "id": "03",
+      "name": "Meeting Point",
+      "group": "Two-origin convergence",
+      "parts": [
+        [
+          "First bowed contour",
+          "M18 12C35 12 44 25 48 39C51 49 55 53 64 56C78 61 86 73 86 88H70C70 78 64 74 55 71C40 66 36 56 32 43C29 33 25 28 18 28Z"
+        ],
+        [
+          "Second bowed contour",
+          "M82 12V28C75 28 70 33 67 43C63 56 59 66 44 71C35 74 29 78 29 88H13C13 73 21 61 35 56C44 53 48 49 51 39C55 25 65 12 82 12Z"
+        ]
+      ],
+      "accent": "M36 42L59 38L67 54L53 64L36 57Z",
+      "notes": [
+        "Two bowed paths start independently",
+        "Their material joins at one off-centre waist",
+        "Aqua: the shared portion, not a third part"
+      ],
+      "story": "Two independent curves become a single centre of gravity.",
+      "impression": "A sculpted, pinched form with a stable base and two open upper ends.",
+      "beauty": "Concave sides and broad curved shoulders create tension without sharp tips. The central overlap makes a strong one-color silhouette.",
+      "hidden": "Two bowed paths cross in shared material. Each can be traced from a different upper origin to the opposite side of the base.",
+      "specific": "Two starting points refer to Cobie and Evan. The shared waist is Covan itself: a new structure formed from both, rather than a plus sign between two names.",
+      "portability": "A crossing can also suggest partnership elsewhere. Here the curved, asymmetrical joining and name-origin mapping matter; the concept does not claim that every junction belongs to Covan.",
+      "aqua": "The accent identifies the common portion of both contributions. Removing it leaves the joining fully visible.",
+      "watch": "The silhouette has an abstract X / hourglass association. It should be judged as a shape before that secondary reading is explained.",
+      "letters": "No hidden alphabet is required for this direction.",
+      "scores": {
+        "First-sight beauty": 7,
+        "Distinctiveness": 8,
+        "Brand-specific meaning": 9,
+        "Discoverability": 8,
+        "Timelessness": 8,
+        "Small-size readability": 9,
+        "Monochrome performance": 9,
+        "Memorability": 8,
+        "Visual balance": 8,
+        "Ownability": 7
+      }
+    },
+    {
+      "id": "04",
+      "name": "Countervoice",
+      "group": "Hidden C + E",
+      "parts": [
+        [
+          "Enclosing stroke",
+          "M66 10C43 7 22 19 14 39C5 61 15 81 35 89C54 97 76 87 87 68L73 61C66 73 54 78 42 74C29 69 25 58 29 45C33 32 46 24 61 26Z"
+        ],
+        [
+          "Returning stroke",
+          "M61 26C73 27 82 32 87 41C93 53 83 64 70 64H45V50H68C73 50 75 47 71 44C68 42 63 41 58 41H39L44 28C49 26 55 25 61 26Z"
+        ]
+      ],
+      "accent": "M57 22L78 26L85 39L75 46L57 40Z",
+      "notes": [
+        "C: the enclosing sweep, before the tilt",
+        "E: an incomplete rhythm of shared interior levels",
+        "The whole construction rotates together"
+      ],
+      "transform": "rotate(-35 50 50)",
+      "story": "The first letters of two names share one curved voice.",
+      "impression": "A curled, oblique form with an open outer sweep and a compact returning lip.",
+      "beauty": "A long enclosing curve contrasts with a short internal return. Tilting the construction reduces the appearance of typeset initials.",
+      "hidden": "In the construction view, C is the enclosing stroke. An E-like rhythm appears where the return divides the interior into unequal levels; it is a suggestion, not a complete E glyph.",
+      "specific": "The two strokes refer to the first letters of Cobie and Evan. They borrow the same counterspace instead of sitting beside each other as CE.",
+      "portability": "The association is stronger for names beginning C and E, but it is still an abstract mark. The inner-return construction gives a specific naming route without proving uniqueness.",
+      "aqua": "Aqua sits on the returning voice as it enters the shared enclosure. It identifies the fusion rather than spelling a colored E.",
+      "watch": "The letter reading is less immediate than the curl. At small sizes, judge the large counter and opening rather than the E suggestion.",
+      "letters": "C is structural; E is an incomplete counterform reading. No literal CE is overlaid.",
+      "scores": {
+        "First-sight beauty": 7,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 8,
+        "Discoverability": 6,
+        "Timelessness": 8,
+        "Small-size readability": 8,
+        "Monochrome performance": 9,
+        "Memorability": 7,
+        "Visual balance": 8,
+        "Ownability": 6
+      }
+    },
+    {
+      "id": "05",
+      "name": "Shared Counter",
+      "group": "Hidden C + E",
+      "parts": [
+        [
+          "Outer body",
+          "M47 10C69 10 87 27 87 50C87 72 70 90 48 90H27C18 90 12 84 12 75V38C12 21 27 10 47 10ZM47 27C36 27 28 32 28 42V72C28 74 30 75 33 75H47C60 75 71 64 71 50C71 37 61 27 47 27Z"
+        ],
+        [
+          "Fold into the counter",
+          "M71 43V58H47C41 58 38 55 38 50C38 46 41 43 47 43Z"
+        ]
+      ],
+      "accent": "M37 42H72V59H37Z",
+      "notes": [
+        "C: the open inner counter around the fold",
+        "E: the inner ledge shares the outer upper and lower turns",
+        "The letters are counterform readings, not separate glyphs"
+      ],
+      "story": "Cobie and Evan share a counter, just as their names share Covan.",
+      "impression": "A rounded chamber with one inward fold and a single quiet, squared foot.",
+      "beauty": "The closed perimeter gives visual calm; the off-centre pocket prevents it from becoming a neutral ring. Broad strokes keep the interior useful at icon scale.",
+      "hidden": "The open negative space wraps around the inner fold like a C. The fold borrows the top and bottom of the enclosure to suggest an E-like three-level structure.",
+      "specific": "One letter is read in empty space and the other in the material around it: two names contribute to the same whole without two colored initials.",
+      "portability": "The counterform reading depends on the Cobie/Evan story. Without it, the form may be read as a rounded d; the concept offers a name-based rationale, not an untransferable symbol.",
+      "aqua": "The short inner fold is the shared counter’s focal point. It changes neither the outline nor the letter reading in monochrome.",
+      "watch": "A lowercase d or speech-form association is possible. The meaning should add interest, not be needed to rescue that first impression.",
+      "letters": "The C is negative space. The E is a shared-stroke suggestion, intentionally not a literal glyph.",
+      "scores": {
+        "First-sight beauty": 8,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 8,
+        "Discoverability": 6,
+        "Timelessness": 9,
+        "Small-size readability": 9,
+        "Monochrome performance": 9,
+        "Memorability": 7,
+        "Visual balance": 9,
+        "Ownability": 6
+      }
+    },
+    {
+      "id": "06",
+      "name": "Covan Ligature",
+      "group": "Hidden COVAN geometry",
+      "parts": [
+        [
+          "Rounded framework",
+          "M14 81V38C14 20 26 10 41 10C57 10 69 22 69 39V81H53V39C53 31 48 26 41 26C34 26 30 31 30 39V81Z"
+        ],
+        [
+          "Shared diagonal",
+          "M30 81L66 20C71 11 85 13 86 24V81H68V44L44 88Z"
+        ]
+      ],
+      "accent": "M57 30L67 12H86V30L73 45Z",
+      "notes": [
+        "O: the rounded upper counter",
+        "V / N: the central interval and diagonal",
+        "C / A are suggestions, not five forced glyphs"
+      ],
+      "story": "One name is built from shared curves, counters and a single connecting stroke.",
+      "impression": "A rounded ligature: two uprights joined by an oblique passage.",
+      "beauty": "The curved shoulder tempers the diagonal. A firm baseline and open lower intervals give the compact form a stable rhythm.",
+      "hidden": "The rounded counter supplies an O association; the diagonal and uprights supply N. A V-like interval appears between the uprights. C and A are not independently encoded.",
+      "specific": "The construction studies the relationships inside COVAN rather than stacking five initials. O, V and N provide a discoverable subset of the name.",
+      "portability": "This could suit another name sharing those letters. It is a partial Covan ligature, not a claim that five letters make a symbol impossible to reuse.",
+      "aqua": "The small upper join identifies the meeting between the rounded framework and the connecting stroke.",
+      "watch": "An n-like first reading is likely. The central counter must remain open at 16px; all-five-letter completeness is deliberately sacrificed.",
+      "letters": "O / V / N suggested. C / A omitted to protect the silhouette.",
+      "scores": {
+        "First-sight beauty": 7,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 8,
+        "Discoverability": 7,
+        "Timelessness": 8,
+        "Small-size readability": 8,
+        "Monochrome performance": 9,
+        "Memorability": 8,
+        "Visual balance": 8,
+        "Ownability": 6
+      }
+    },
+    {
+      "id": "07",
+      "name": "Oblique Name",
+      "group": "Hidden COVAN geometry",
+      "parts": [
+        [
+          "Open envelope",
+          "M81 23C64 8 43 8 27 20C11 32 8 54 18 72C27 88 44 94 62 88L57 73C46 77 36 72 31 63C25 52 27 39 36 32C46 24 58 26 69 35Z"
+        ],
+        [
+          "Diagonal return",
+          "M63 38L77 27C94 46 90 72 71 84L43 57L54 45L69 60C74 52 71 44 63 38Z"
+        ]
+      ],
+      "accent": "M61 35L73 24L86 35L82 51L69 48Z",
+      "notes": [
+        "C / O: an open elliptical envelope",
+        "N: the diagonal relationship of the return",
+        "V / A omitted rather than invented"
+      ],
+      "transform": "rotate(28 50 50)",
+      "story": "Covan leaves its name open to the next useful product.",
+      "impression": "An asymmetric oval fold with a deliberate opening and an oblique return.",
+      "beauty": "The outer sweep carries most of the weight; a short inward fold gives the right side tension. The open edge avoids a sealed, heavy badge.",
+      "hidden": "C and O are alternate readings of the open envelope. The return and outer side suggest an N-like diagonal relationship. V and A are not claimed as complete hidden letters.",
+      "specific": "This is a partial C–O–N construction from COVAN, with openness standing for a parent name that can hold future work. It keeps the name’s framework rather than illustrating a product category.",
+      "portability": "An open oval is not exclusively Covan. The diagonal return and partial name reading distinguish the concept’s rationale, but it needs brand use to become owned in people’s memory.",
+      "aqua": "The fold where the outer form becomes the inner relation is accented: the moment a name becomes a system.",
+      "watch": "The return can suggest a stylized letter before the full name. Avoid explaining V or A through imaginary construction lines.",
+      "letters": "C / O / N suggested. V / A omitted rather than forced.",
+      "scores": {
+        "First-sight beauty": 7,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 7,
+        "Discoverability": 6,
+        "Timelessness": 8,
+        "Small-size readability": 8,
+        "Monochrome performance": 9,
+        "Memorability": 7,
+        "Visual balance": 8,
+        "Ownability": 6
+      }
+    },
+    {
+      "id": "08",
+      "name": "Raised Edge",
+      "group": "高凡 / Elevating the ordinary",
+      "parts": [
+        [
+          "Everyday plane",
+          "M12 66C25 76 40 76 51 66C62 56 65 37 80 23L90 36C79 46 76 65 64 77C50 91 29 93 12 82Z"
+        ],
+        [
+          "Refined turn",
+          "M12 66V50C12 27 28 12 49 12C61 12 72 17 80 23L72 39C63 32 56 28 49 28C35 28 28 37 28 50V78H12Z"
+        ]
+      ],
+      "accent": "M62 24L78 17L90 28L78 44L62 36Z",
+      "notes": [
+        "凡: an ordinary continuous surface",
+        "高: the same material takes a more considered shape",
+        "Aqua: the turn where refinement happens"
+      ],
+      "story": "高凡 gives an ordinary surface a more considered shape.",
+      "impression": "A continuous, lifted edge with one generous pocket of negative space.",
+      "beauty": "A straight starting edge becomes a broad, controlled curve. The result has motion without an arrowhead or an aggressive apex.",
+      "hidden": "The lower plane is the ordinary starting point; the upper turn is the same material after refinement. Elevation happens through shaping, not upward-pointing symbolism.",
+      "specific": "The interpretation comes directly from 高凡: elevating the ordinary. It describes practical ideas becoming useful products through engineering and care.",
+      "portability": "Refinement is broadly applicable, but the 高 / 凡 interpretation is a direct bilingual connection to this brand’s name. It does not depend on reading Chinese characters in the shape.",
+      "aqua": "Aqua marks the turn where the original surface takes its refined form.",
+      "watch": "A leaf or folded-sheet association is possible. Keep the technical cut and broad surface if this direction advances.",
+      "letters": "No literal Chinese characters or English letters are encoded.",
+      "scores": {
+        "First-sight beauty": 8,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 9,
+        "Discoverability": 7,
+        "Timelessness": 9,
+        "Small-size readability": 9,
+        "Monochrome performance": 9,
+        "Memorability": 8,
+        "Visual balance": 9,
+        "Ownability": 7
+      }
+    },
+    {
+      "id": "09",
+      "name": "Shared Grain",
+      "group": "Many products, one system",
+      "parts": [
+        [
+          "First product contour",
+          "M12 64C12 35 31 13 58 10V27C41 30 29 44 29 64V83H12Z"
+        ],
+        [
+          "Second product contour",
+          "M37 84V65C37 43 54 28 76 28V45C62 45 54 53 54 66V84Z"
+        ],
+        [
+          "Third product contour",
+          "M63 84V66C63 57 70 52 79 52H88V68H81C79 68 79 70 79 73V84Z"
+        ]
+      ],
+      "accent": "M37 55C40 43 50 34 62 31V49C57 52 54 57 54 65H37Z",
+      "notes": [
+        "Each contour can hold a separate product identity",
+        "Shared curvature and one baseline hold the family together",
+        "Aqua: one active product within the independent studio"
+      ],
+      "story": "Independent products grow from the same Covan practice.",
+      "impression": "Three unequal curved contours, aligned by one baseline and one family of radii.",
+      "beauty": "The contours step inward without becoming identical blocks. Open channels create a rhythm that remains readable in one color.",
+      "hidden": "Each contour can stand as its own product. Their shared curvature and baseline establish the parent identity without recoloring every product to match it.",
+      "specific": "Covan’s job is to hold independent apps, tools and experiments together. Three contours illustrate that relationship; they do not assert that the studio will always have exactly three products.",
+      "portability": "This is the most philosophy-led, transferable direction in the set. Its specificity comes from Covan’s parent-brand role, not a hidden name claim; assess that tradeoff explicitly.",
+      "aqua": "One contour is active while the surrounding system stays silver. It represents a product receiving attention, not a permanent brand hierarchy.",
+      "watch": "The stepped curve can suggest a signal or fingerprint. The lack of a direct name signature is its main weakness.",
+      "letters": "No letters are claimed. This explores the requested portfolio-system direction.",
+      "scores": {
+        "First-sight beauty": 8,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 6,
+        "Discoverability": 8,
+        "Timelessness": 9,
+        "Small-size readability": 8,
+        "Monochrome performance": 9,
+        "Memorability": 7,
+        "Visual balance": 8,
+        "Ownability": 5
+      }
+    },
+    {
+      "id": "10",
+      "name": "Revision Fold",
+      "group": "Product iteration / Covan loop",
+      "parts": [
+        [
+          "First product pass",
+          "M19 27C28 15 42 10 56 13C78 17 90 35 86 56C82 77 65 90 44 89C27 88 14 78 11 64L27 60C29 68 36 73 45 73C58 74 68 66 71 53C74 40 66 30 54 28C45 26 37 29 31 37Z"
+        ],
+        [
+          "Learning returned",
+          "M11 64C7 48 18 35 32 36C47 37 55 49 52 63L36 60C37 54 35 51 31 51C26 50 24 54 27 60Z"
+        ]
+      ],
+      "accent": "M30 39L48 38L56 52L53 65L35 62Z",
+      "notes": [
+        "The outer sweep is one pass through a product",
+        "The return folds into the same work, rather than circling outside it",
+        "Aqua: learning changing the next version"
+      ],
+      "story": "At Covan, what a product teaches us becomes part of its next version.",
+      "impression": "An uneven loop with a compact return folded into its interior.",
+      "beauty": "A generous outer arc and a smaller inner curve create two scales of movement. The offset opening keeps it from becoming a regular ring.",
+      "hidden": "The second passage returns into the work itself. It represents learning changing the product, not a path going endlessly around it.",
+      "specific": "The open outer sweep echoes the C/O in Covan, while the internal return expresses an independent lab maintaining and improving its own products.",
+      "portability": "Iteration is a shared software principle. The internal return and partial name echo support Covan’s practice, but this direction has a weaker naming claim than the two-origin concepts.",
+      "aqua": "Aqua is the return where learning enters the next version. It is an integrated curve, not a separate terminal tile.",
+      "watch": "A spiral or curled letter may be seen first. The offset fold must remain distinct from a loading-ring silhouette.",
+      "letters": "Only a loose C / O echo is intended. No full monogram is claimed.",
+      "scores": {
+        "First-sight beauty": 8,
+        "Distinctiveness": 7,
+        "Brand-specific meaning": 7,
+        "Discoverability": 8,
+        "Timelessness": 8,
+        "Small-size readability": 9,
+        "Monochrome performance": 9,
+        "Memorability": 8,
+        "Visual balance": 8,
+        "Ownability": 6
+      }
+    }
+  ]
+}

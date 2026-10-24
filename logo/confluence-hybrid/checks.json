@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "directions": 3,
+  "pngs_checked": 75,
+  "primary_sizes": [
+    64,
+    128,
+    256
+  ],
+  "secondary_sizes": [
+    16,
+    24
+  ],
+  "secondary_legibility_not_an_acceptance_gate": true,
+  "micro_created": false,
+  "variants": [
+    {
+      "id": "h1",
+      "aqua_filled_area_percent": 8.633,
+      "primary_counter_open_and_ink_connected": true,
+      "colorway_svg_contour_identical": true,
+      "raster_edge_differences": {}
+    },
+    {
+      "id": "h2",
+      "aqua_filled_area_percent": 8.667,
+      "primary_counter_open_and_ink_connected": true,
+      "colorway_svg_contour_identical": true,
+      "raster_edge_differences": {}
+    },
+    {
+      "id": "h3",
+      "aqua_filled_area_percent": 8.621,
+      "primary_counter_open_and_ink_connected": true,
+      "colorway_svg_contour_identical": true,
+      "raster_edge_differences": {}
+    }
+  ],
+  "note": "Primary raster checks do not determine beauty or trademark distinctiveness. A separate micro design follows selection."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "archived \u2014 superseded by full concept exploration",
+  "base": "Direction 01 \u2014 Modular C",
+  "center": [
+    32,
+    32
+  ],
+  "outer_radius": 26,
+  "inner_radius": 15,
+  "variants": {
+    "a": {
+      "title": "Soft Modular C",
+      "description": "A circular C in three pieces. The lower white arc and aqua end share one continuous construction; 45\u00b0 open ends retain a technical edge.",
+      "filled_area": 1005.997,
+      "aqua_area_percent": 11.346,
+      "prior_base_aqua_percent": 11.679,
+      "paths": 3
+    },
+    "b": {
+      "title": "Modular C with Hidden V",
+      "description": "Derived from A. Two shallow, opposing 45\u00b0 cuts form a quiet V in the seam\u2019s negative space. No separate V or colored glyph.",
+      "filled_area": 1005.997,
+      "aqua_area_percent": 11.346,
+      "prior_base_aqua_percent": 11.679,
+      "paths": 3
+    },
+    "c": {
+      "title": "Continuous-flow Modular C",
+      "description": "One circular path, divided by a narrow 45\u00b0 seam and a smaller terminal gap. The modules feel connected; aqua only marks the endpoint.",
+      "filled_area": 1035.857,
+      "aqua_area_percent": 11.208,
+      "prior_base_aqua_percent": 11.679,
+      "paths": 3
+    }
+  }
+}

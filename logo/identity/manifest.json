@@ -1,0 +1,93 @@
+{
+  "status": "unapproved monochrome studies",
+  "directions": 2,
+  "refinements_per_direction": 2,
+  "color": "monochrome only",
+  "a_extraction": "Exact C path from the wordmark; translation and uniform scale only",
+  "variants": [
+    {
+      "direction": "A",
+      "label": "Open proportions",
+      "c": "M86 18C77 6 65 -1 49 -1C21 -1 3 20 3 50C3 80 21 101 49 101C65 101 78 94 87 82L77 74C70 84 61 89 49 89C29 89 16 73 16 50C16 27 29 11 49 11C61 11 71 17 77 27Z",
+      "cwidth": 87,
+      "owidth": 68,
+      "vscale": 1,
+      "xscale": 1,
+      "gaps": [
+        9,
+        8,
+        8,
+        10
+      ],
+      "wordgap": 40,
+      "labscale": 0.91,
+      "summary": "A broader C, open counters and measured spacing.",
+      "changes": [
+        "C redrawn with a broad bowl, controlled overshoot and inclined terminals.",
+        "o redrawn to echo the C\u2019s counter proportions. v has a shallow curved inner join.",
+        "C\u2013o, o\u2013v, v\u2013a and a\u2013n spaced individually; Labs uses 91% cap height."
+      ],
+      "id": "a1",
+      "navbar_height": 28,
+      "navbar_width": 160.251,
+      "wordmark_width": 686.789
+    },
+    {
+      "direction": "A",
+      "label": "Closer proportions",
+      "c": "M81 19C73 6 61 -1 46 -1C20 -1 3 19 3 50C3 81 20 101 46 101C62 101 74 94 82 81L71 75C65 85 57 89 46 89C28 89 16 74 16 50C16 26 28 11 46 11C57 11 65 16 71 26Z",
+      "cwidth": 82,
+      "owidth": 65,
+      "vscale": 0.96,
+      "xscale": 0.97,
+      "gaps": [
+        8,
+        7,
+        8,
+        9
+      ],
+      "wordgap": 38,
+      "labscale": 0.91,
+      "summary": "A slightly narrower C and a closer word rhythm.",
+      "changes": [
+        "C redrawn with a narrower bowl and more upright terminal cuts.",
+        "o and v narrowed with it; a/n adjusted in width to retain an even rhythm.",
+        "Pair spacing tightened selectively; the same restrained Labs proportions."
+      ],
+      "id": "a2",
+      "navbar_height": 28,
+      "navbar_width": 154.145,
+      "wordmark_width": 660.623
+    },
+    {
+      "direction": "B",
+      "label": "Circular balance",
+      "c": "M82 23C74 14 63 10 51 10C28 10 11 27 11 50C11 73 28 90 51 90C63 90 74 85 82 76L72.8 67.6C67.1 74.1 60.5 77.5 51 77.5C35.3 77.5 23.5 65.7 23.5 50C23.5 34.3 35.3 22.5 51 22.5C60.5 22.5 67.1 25.9 72.8 32.4Z",
+      "summary": "A continuous C with an almost circular counter.",
+      "changes": [
+        "One uninterrupted contour; no module seams.",
+        "Concentric-feeling curves and matched oblique terminal cuts.",
+        "The mark sits at 28px beside a restrained 20px Inter wordmark."
+      ],
+      "id": "b1",
+      "navbar_height": 36,
+      "navbar_width": 181.316,
+      "wordmark_width": 712.579
+    },
+    {
+      "direction": "B",
+      "label": "Optical balance",
+      "c": "M78.16 24C72 14 62.32 9 50.88 9C29.76 9 16.56 27 16.56 50C16.56 74 30.64 91 50.88 91C63.2 91 72.88 85 79.92 75L71.12 67C65.84 74 58.8 79 50.88 79C36.8 79 27.12 67 27.12 50C27.12 33 36.8 21 50.88 21C58.8 21 65.84 25 70.24 32Z",
+      "summary": "A quieter upper bowl and a slightly fuller lower return.",
+      "changes": [
+        "One uninterrupted contour; no hidden letters.",
+        "A slightly more upright bowl and a modestly extended lower terminal.",
+        "The same typography, scale and spacing as B1, so only the C changes."
+      ],
+      "id": "b2",
+      "navbar_height": 36,
+      "navbar_width": 181.316,
+      "wordmark_width": 712.579
+    }
+  ]
+}
