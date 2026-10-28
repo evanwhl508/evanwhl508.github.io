@@ -27,6 +27,7 @@ Open http://127.0.0.1:4173/ (theme 2 by default), `/theme1/` (preserved original
 - `assets/apple-touch-icon.png`: preserved theme 1 icon; theme 2 uses `logo/apple-touch-icon.png`.
 - `/privacy/`, `/terms/`: website policies, separate from app policies.
 - `/support/`: product help and policy directory.
+- `/products/siu-mai-roach-rumble/`: game marketing page, with `/support/` and `/privacy/` underneath. See [App Store URL handoff](docs/siu-mai-release-pages.md).
 - `/products/mj-actuary/`: product page, with `/privacy/` and `/terms/` underneath.
 - `/products/maidday/privacy/`: link to the maintained policy on `maidday.app`, rather than a second copy.
 - `/mj-actuary/privacy.html`, `/mj-actuary/terms.html`: legacy URLs that redirect to the new product policy pages, with ordinary fallback links.
@@ -42,6 +43,7 @@ The canonical source is [docs/design-system.md](docs/design-system.md). Any devi
 
 - `site/theme1/` freezes the previous HTML/CSS. Do not restyle it when editing theme 2.
 - `site/theme2/home.html` is the current homepage content.
+- `site/pages/routes.json` registers new current-design product routes without modifying the frozen theme 1 snapshot.
 - `site/pages/` holds shared document content for the default/theme 2 pages. Theme 1 remains the preserved snapshot.
 - `scripts/build-site.py` emits each studio page at its canonical path and under both theme prefixes. It also shares the navbar/footer shell. All internal studio navigation stays within its current theme prefix.
 - Explicit theme routes are `noindex, follow`, with canonicals pointing to the unprefixed site. The sitemap contains only canonical URLs. Existing app-specific product sites remain independent.

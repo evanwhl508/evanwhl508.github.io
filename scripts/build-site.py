@@ -2,6 +2,8 @@
 """Generate static theme routes. Standard library only; no browser-side theme detection."""
 from pathlib import Path
 import re
+import json
+from html import escape
 from logo_component import logo
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -9,7 +11,9 @@ SITE_HOST = (ROOT / 'CNAME').read_text().strip()
 assert re.fullmatch(r'[A-Za-z0-9.-]+', SITE_HOST), 'CNAME must contain one hostname'
 ORIGIN = 'https://' + SITE_HOST
 SOURCE = ROOT / 'site'
-ROUTES = sorted(p.relative_to(SOURCE / 'theme1').as_posix() for p in (SOURCE / 'theme1').rglob('*.html'))
+SNAPSHOT_ROUTES = sorted(p.relative_to(SOURCE / 'theme1').as_posix() for p in (SOURCE / 'theme1').rglob('*.html'))
+NEW_PAGES = json.loads((SOURCE / 'pages/routes.json').read_text())
+ROUTES = sorted(set(SNAPSHOT_ROUTES) | set(NEW_PAGES))
 ARROW = '<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>'
 
 
@@ -35,7 +39,8 @@ def scoped_links(html, prefix):
 
 
 def shell(route):
-    original = (SOURCE / 'theme1' / ('index.html' if route == 'brand/index.html' else route)).read_text()
+    template = 'products/mj-actuary/index.html' if route in NEW_PAGES else ('index.html' if route == 'brand/index.html' else route)
+    original = (SOURCE / 'theme1' / template).read_text()
     head = re.search(r'<head>([\s\S]*?)</head>', original)[1]
     head = head.replace('/assets/site.css', '/assets/theme2.css')
     head = head.replace('#101c1d', '#08111F')
@@ -56,6 +61,15 @@ def shell(route):
         head = head.replace('property="og:url" content="https://covanlabs.com/"', 'property="og:url" content="https://covanlabs.com/brand/"')
         head = re.sub(r'(<meta (?:name|property)="(?:description|og:description|twitter:description)" content=")[^"]*', r'\1Official Covan Labs logo assets, colors and usage guidelines.', head)
         head = re.sub(r'(<meta (?:name|property)="(?:og:title|twitter:title)" content=")[^"]*', r'\1Brand reference — Covan Labs', head)
+    if route in NEW_PAGES:
+        metadata = NEW_PAGES[route]
+        title, description = escape(metadata['title'], quote=True), escape(metadata['description'], quote=True)
+        canonical = ORIGIN + '/' + route.removesuffix('index.html')
+        head = re.sub(r'<title>.*?</title>', lambda _: '<title>' + title + '</title>', head)
+        for names, value in (('description|og:description|twitter:description', description), ('og:title|twitter:title', title)):
+            head = re.sub(r'(<meta (?:name|property)="(?:' + names + r')" content=")[^"]*', lambda m: m[1] + value, head)
+        head = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m[1] + canonical, head)
+        head = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m[1] + canonical, head)
     nav = '<a href="/#products">Products</a><a href="/#about">About</a><a href="/#contact">Contact</a>'
     header = f'''<a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar page">
@@ -72,7 +86,7 @@ def shell(route):
 
 
 def main():
-    for route in ROUTES:
+    for route in SNAPSHOT_ROUTES:
         original = (SOURCE / 'theme1' / route).read_text()
         original = original.replace('<html lang="en">', '<html lang="en" data-theme="theme1">')
         # Root routes are canonical; explicit theme routes are preview alternatives.
@@ -84,6 +98,11 @@ def main():
         if 'name="robots"' not in current:
             current = current.replace('</head>', '  <meta name="robots" content="noindex, follow">\n</head>')
         write('theme2/' + route, scoped_links(current, '/theme2'))
+    # New product pages use the current design; frozen theme 1 stays untouched.
+    for route in NEW_PAGES:
+        current = shell(route)
+        write(route, current)
+        write('theme2/' + route, scoped_links(current.replace('</head>', '<meta name="robots" content="noindex, follow">\n</head>'), '/theme2'))
     brand = shell('brand/index.html')
     write('brand/index.html', brand)
     write('theme2/brand/index.html', scoped_links(brand.replace('</head>', '<meta name="robots" content="noindex, follow">\n</head>'), '/theme2'))
@@ -97,7 +116,7 @@ def main():
     write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
     # Preserve the original CSS byte-for-byte for theme 1.
     (ROOT / 'assets/site.css').write_bytes((SOURCE / 'theme1/site.css').read_bytes())
-    print(f'Built {len(ROUTES)} pages in each of /, /theme1/ and /theme2/.')
+    print(f'Built {len(SNAPSHOT_ROUTES)} preserved routes and {len(NEW_PAGES)} new product routes; default and theme 2 updated.')
 
 
 if __name__ == '__main__':

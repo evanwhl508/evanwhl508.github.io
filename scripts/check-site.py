@@ -82,6 +82,18 @@ def main():
     for route in manifest:
         for prefix in ('', 'theme1/', 'theme2/'):
             assert (ROOT/(prefix+route)).is_file(), prefix+route
+    # New current-design routes must be generated with distinct metadata and sitemap entries.
+    new_pages = json.loads((ROOT/'site/pages/routes.json').read_text())
+    sitemap_urls = {item[0].text for item in ET.parse(ROOT/'sitemap.xml').getroot()}
+    for route in new_pages:
+        for prefix in ('', 'theme2/'):
+            path = ROOT/(prefix+route)
+            assert path in pages, f'Missing new product route: {path}'
+            page = pages[path]
+            expected = 'https://' + (ROOT/'CNAME').read_text().strip() + '/' + route.removesuffix('index.html')
+            assert page.canonical == expected and expected in sitemap_urls, path
+            assert page.meta['og:title'] == new_pages[route]['title'], path
+            assert page.meta['description'] == new_pages[route]['description'], path
     for item in ET.parse(ROOT/'sitemap.xml').getroot():
         path = urlsplit(item[0].text).path
         assert not path.startswith(('/theme1', '/theme2')), path
