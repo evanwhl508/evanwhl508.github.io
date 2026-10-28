@@ -27,6 +27,7 @@ Open http://127.0.0.1:4173/ (theme 2 by default), `/theme1/` (preserved original
 - `assets/apple-touch-icon.png`: preserved theme 1 icon; theme 2 uses `logo/apple-touch-icon.png`.
 - `/privacy/`, `/terms/`: website policies, separate from app policies.
 - `/support/`: product help and policy directory.
+- `/products/claw-mai/`: game marketing page, with `/support/` and `/privacy/` underneath. See [Claw Mai App Store URL handoff](docs/claw-mai-release-pages.md).
 - `/products/siu-mai-roach-rumble/`: game marketing page, with `/support/` and `/privacy/` underneath. See [App Store URL handoff](docs/siu-mai-release-pages.md).
 - `/products/mj-actuary/`: product page, with `/privacy/` and `/terms/` underneath.
 - `/products/maidday/privacy/`: link to the maintained policy on `maidday.app`, rather than a second copy.

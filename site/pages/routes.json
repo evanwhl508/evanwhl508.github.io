@@ -10,5 +10,17 @@
   "products/siu-mai-roach-rumble/privacy/index.html": {
     "title": "Siu Mai Roach Rumble Privacy Policy — Covan Labs",
     "description": "How Siu Mai Roach Rumble handles local game progress, optional diagnostics and support messages. Review your privacy and data choices."
+  },
+  "products/claw-mai/index.html": {
+    "title": "Claw Mai — Covan Labs",
+    "description": "A little claw. A lot of Siu Mai. Discover a 3D claw-machine game with 16 dolls, five themes, daily quests and a playful visiting cat. Coming soon for iPhone and iPad."
+  },
+  "products/claw-mai/support/index.html": {
+    "title": "Claw Mai Support — Covan Labs",
+    "description": "Get help with Claw Mai, coins, machine unlocks, your doll collection and saved progress. Contact support@covanlabs.com in English or Traditional Chinese."
+  },
+  "products/claw-mai/privacy/index.html": {
+    "title": "Claw Mai Privacy Policy — Covan Labs",
+    "description": "How Claw Mai handles local game progress, support messages and your privacy choices. The launch version has no active ads or in-app purchases."
   }
 }
