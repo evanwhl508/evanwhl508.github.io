@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "refinements": 3,
+  "pngs_checked": 75,
+  "sizes": [
+    16,
+    24,
+    32,
+    64,
+    512
+  ],
+  "variants": [
+    {
+      "id": "a",
+      "aqua_filled_area_percent": 7.359,
+      "optical_station_change_percent": {
+        "spine": 6.0,
+        "crown": -5.71,
+        "lower_sweep": 6.67
+      },
+      "spine_tangents_aligned": true,
+      "union_check": {
+        "different_boundary_pixels": 1,
+        "maximum_alpha_difference": 64
+      },
+      "intersection_check": {
+        "different_boundary_pixels": 1,
+        "maximum_alpha_difference": 64
+      },
+      "all_colorway_alpha_masks_identical": true,
+      "native_counter_open_and_ink_connected": true
+    },
+    {
+      "id": "b",
+      "aqua_filled_area_percent": 7.383,
+      "optical_station_change_percent": {
+        "spine": 7.0,
+        "crown": -6.67,
+        "lower_sweep": 7.78
+      },
+      "spine_tangents_aligned": true,
+      "union_check": {
+        "different_boundary_pixels": 0,
+        "maximum_alpha_difference": 0
+      },
+      "intersection_check": {
+        "different_boundary_pixels": 0,
+        "maximum_alpha_difference": 0
+      },
+      "all_colorway_alpha_masks_identical": true,
+      "native_counter_open_and_ink_connected": true
+    },
+    {
+      "id": "c",
+      "aqua_filled_area_percent": 7.425,
+      "optical_station_change_percent": {
+        "spine": 5.0,
+        "crown": -5.24,
+        "lower_sweep": 6.11
+      },
+      "spine_tangents_aligned": true,
+      "union_check": {
+        "different_boundary_pixels": 1,
+        "maximum_alpha_difference": 63
+      },
+      "intersection_check": {
+        "different_boundary_pixels": 1,
+        "maximum_alpha_difference": 63
+      },
+      "all_colorway_alpha_masks_identical": true,
+      "native_counter_open_and_ink_connected": true
+    }
+  ],
+  "limitation": "Independent source rasterization differs on at most one boundary pixel at 512px, recorded above. All final colorway masks match exactly. Checks establish construction and raster legibility, not subjective beauty or legal distinctiveness."
+}

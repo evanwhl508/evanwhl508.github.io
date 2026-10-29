@@ -1,0 +1,8 @@
+# Source templates and tooling are not public GitHub Pages content.
+exclude:
+  - site
+  - scripts
+  - docs
+  - README.md
+  - output
+  - AGENTS.md

@@ -1,0 +1,171 @@
+{
+  "master": {
+    "name": "Polish B \u2014 Confluence C",
+    "source": "logo/h1-polish/polish-b/mark-primary.svg",
+    "sha256": "7f53951a0acbfb8385f8d3de029e688c9ccac8fa11ae7ec5825f0a306ea95f16",
+    "viewBox": "0 0 100 100",
+    "silhouette": "M81.5 24C74.5 12 63.5 7 50 7C28.5 7 14 25.5 14 49C14 73 28 91 48.5 91C62 91 74.8 86 81.5 78C85.2 72.5 77.653435 67.830541 71.253435 70.530541C65.853435 75.530541 57.8 77.5 49.8 77.5C36.2 77.5 27.8 65 27.8 49.5C27.8 32.4 37.8 19.3 51.4 19.3C61.4 19.3 69 24 73.4 30.6C75.2 33 77 24.7 81.5 24Z",
+    "confluence": "M14.033671 47.045811C14.011278 47.693123 14 48.344617 14 49C14 54.078126 14.626776 58.887633 15.809283 63.314849C18.573703 65.716311 27.75381 58.009952 28.379533 56.376049C27.997009 54.177141 27.8 51.873751 27.8 49.5C27.8 48.865922 27.81375 48.237344 27.840923 47.614729C25.192152 45.674394 16.71348 49.166152 14.033671 47.045811Z"
+  },
+  "colors": {
+    "primary": [
+      "#F4F7FA",
+      "#39C6C8"
+    ],
+    "light": [
+      "#08111F",
+      "#15999C"
+    ],
+    "white": [
+      "#F4F7FA",
+      null
+    ],
+    "navy": [
+      "#08111F",
+      null
+    ],
+    "black": [
+      "#000000",
+      null
+    ]
+  },
+  "wordmark": {
+    "family": "Inter",
+    "Covan": 600,
+    "Labs": 425,
+    "ink_gap_to_mark_height": 0.56
+  },
+  "exports": [
+    {
+      "svg": "logo/covan-mark-primary.svg",
+      "kind": "transparent",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "svg": "logo/covan-mark-light.svg",
+      "kind": "transparent",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "svg": "logo/covan-mark-white.svg",
+      "kind": "transparent",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "svg": "logo/covan-mark-navy.svg",
+      "kind": "transparent",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "svg": "logo/covan-mark-black.svg",
+      "kind": "transparent",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "svg": "logo/covan-logo-horizontal-dark.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 40
+    },
+    {
+      "svg": "logo/covan-logo-horizontal-light.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 40
+    },
+    {
+      "svg": "logo/covan-logo-horizontal-white.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 40
+    },
+    {
+      "svg": "logo/covan-logo-horizontal-monochrome.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 40
+    },
+    {
+      "svg": "logo/covan-logo-horizontal-black.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 40
+    },
+    {
+      "svg": "logo/covan-logo-stacked-dark.svg",
+      "kind": "transparent",
+      "width": 200,
+      "height": 180
+    },
+    {
+      "svg": "logo/covan-logo-stacked-light.svg",
+      "kind": "transparent",
+      "width": 200,
+      "height": 180
+    },
+    {
+      "svg": "logo/covan-logo-stacked-white.svg",
+      "kind": "transparent",
+      "width": 200,
+      "height": 180
+    },
+    {
+      "svg": "logo/covan-logo-stacked-monochrome.svg",
+      "kind": "transparent",
+      "width": 200,
+      "height": 180
+    },
+    {
+      "svg": "logo/covan-logo-stacked-black.svg",
+      "kind": "transparent",
+      "width": 200,
+      "height": 180
+    },
+    {
+      "svg": "logo/covan-logo-localized-dark.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 60
+    },
+    {
+      "svg": "logo/covan-logo-localized-light.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 60
+    },
+    {
+      "svg": "logo/covan-logo-localized-white.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 60
+    },
+    {
+      "svg": "logo/covan-logo-localized-monochrome.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 60
+    },
+    {
+      "svg": "logo/covan-logo-localized-black.svg",
+      "kind": "transparent",
+      "width": 184.155,
+      "height": 60
+    }
+  ],
+  "favicon": "B \u2014 monochrome",
+  "minimums": {
+    "master_standalone": 64,
+    "master_navbar_artboard": 36,
+    "horizontal_width": 160,
+    "micro": 16
+  },
+  "clear_space": {
+    "x_in_512_units": 70.656,
+    "definition": "Left middle thickness: (27.8 \u2212 14) \u00d7 5.12"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "refinements": 4,
+  "pngs_checked": 120,
+  "native_sizes": [
+    16,
+    24,
+    32,
+    64
+  ],
+  "large_proof": 512,
+  "variants": [
+    {
+      "id": "01",
+      "aqua_filled_area_percent": {
+        "primary": 14.47,
+        "origin": 17.76
+      },
+      "identical_svg_contour_all_colorways": true,
+      "native_single_component_and_open_counter": true,
+      "union_raster": {
+        "changed_edge_pixels": 0,
+        "max_alpha_difference": 0
+      },
+      "colorway_edge_differences": {}
+    },
+    {
+      "id": "02",
+      "aqua_filled_area_percent": {
+        "primary": 14.52,
+        "origin": 17.85
+      },
+      "identical_svg_contour_all_colorways": true,
+      "native_single_component_and_open_counter": true,
+      "union_raster": {
+        "changed_edge_pixels": 2,
+        "max_alpha_difference": 64
+      },
+      "colorway_edge_differences": {
+        "black-512": {
+          "changed_edge_pixels": 2,
+          "max_alpha_difference": 64
+        }
+      }
+    },
+    {
+      "id": "03",
+      "aqua_filled_area_percent": {
+        "primary": 14.05,
+        "origin": 17.22
+      },
+      "identical_svg_contour_all_colorways": true,
+      "native_single_component_and_open_counter": true,
+      "union_raster": {
+        "changed_edge_pixels": 0,
+        "max_alpha_difference": 0
+      },
+      "colorway_edge_differences": {}
+    },
+    {
+      "id": "04",
+      "aqua_filled_area_percent": {
+        "primary": 14.07,
+        "origin": 17.46
+      },
+      "identical_svg_contour_all_colorways": true,
+      "native_single_component_and_open_counter": true,
+      "union_raster": {
+        "changed_edge_pixels": 0,
+        "max_alpha_difference": 0
+      },
+      "colorway_edge_differences": {}
+    }
+  ],
+  "note": "Native alpha masks match exactly. Any 512px edge-coverage differences are listed. These checks do not establish beauty, memorability or trademark distinctiveness."
+}

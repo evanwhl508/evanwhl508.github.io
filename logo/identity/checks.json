@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "directions": 2,
+  "refinements": 4,
+  "pngs_checked": 56,
+  "a_mark_matches_wordmark_C_exactly": true,
+  "monochrome_only": true,
+  "sizes": [
+    16,
+    24,
+    32,
+    64,
+    512
+  ],
+  "identities_unclipped": true
+}

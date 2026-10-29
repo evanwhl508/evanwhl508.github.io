@@ -1,0 +1,153 @@
+{
+  "method": "Alpha-weighted 512px raster estimate; red-channel interpolation from silver to aqua; exact 1x browser exports",
+  "sizes": [
+    16,
+    24,
+    32,
+    64,
+    512
+  ],
+  "concepts": {
+    "01": {
+      "name": "Confluence",
+      "aqua_area_percent": 17.41,
+      "filled_pixel_area_at_512": 81469.88,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "02": {
+      "name": "Common Ground",
+      "aqua_area_percent": 13.41,
+      "filled_pixel_area_at_512": 78293.25,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "03": {
+      "name": "Meeting Point",
+      "aqua_area_percent": 18.66,
+      "filled_pixel_area_at_512": 76835.09,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "04": {
+      "name": "Countervoice",
+      "aqua_area_percent": 10.58,
+      "filled_pixel_area_at_512": 95974.27,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "05": {
+      "name": "Shared Counter",
+      "aqua_area_percent": 12.93,
+      "filled_pixel_area_at_512": 99362.99,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "06": {
+      "name": "Covan Ligature",
+      "aqua_area_percent": 13.7,
+      "filled_pixel_area_at_512": 105174.22,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "07": {
+      "name": "Oblique Name",
+      "aqua_area_percent": 10.5,
+      "filled_pixel_area_at_512": 88249.62,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "08": {
+      "name": "Raised Edge",
+      "aqua_area_percent": 12.29,
+      "filled_pixel_area_at_512": 82053.9,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "09": {
+      "name": "Shared Grain",
+      "aqua_area_percent": 17.26,
+      "filled_pixel_area_at_512": 82653.02,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    },
+    "10": {
+      "name": "Revision Fold",
+      "aqua_area_percent": 11.56,
+      "filled_pixel_area_at_512": 87326.14,
+      "max_alpha_difference_from_white": 0,
+      "sizes_verified": [
+        16,
+        24,
+        32,
+        64,
+        512
+      ],
+      "four_colorways_verified": true
+    }
+  },
+  "transparent_png_count": 200
+}

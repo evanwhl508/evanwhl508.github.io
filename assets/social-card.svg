@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><radialGradient id="glow" cx="95%" cy="5%" r="100%"><stop stop-color="#244b3c"/><stop offset="1" stop-color="#101c1d"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(76 58)"><rect width="64" height="64" rx="17" fill="#142d2b"/><path d="M44 19H27L17 32l10 13h17" fill="none" stroke="#92e3bf" stroke-width="6" stroke-linejoin="round"/><path d="M37 27v10h12" fill="none" stroke="#e7c589" stroke-width="5"/></g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="158" y="102" fill="#f2f3e9" font-size="32" font-weight="600">Covan Labs / 高凡</text>
+    <text x="76" y="242" fill="#92e3bf" font-size="17" letter-spacing="2">INDEPENDENT SOFTWARE STUDIO · HONG KONG</text>
+    <text x="72" y="340" fill="#f2f3e9" font-size="72" font-weight="600" letter-spacing="-2">Focused software for</text>
+    <text x="72" y="425" fill="#92e3bf" font-size="72" font-weight="600" letter-spacing="-2">everyday problems.</text>
+    <path d="M76 510H1124" stroke="#426058"/>
+    <text x="76" y="558" fill="#abbcb8" font-size="20">Apps · Games · Web tools · AI-powered products</text>
+    <text x="1124" y="558" text-anchor="end" fill="#e7c589" font-size="20">covanlabs.com</text>
+  </g>
+</svg>
