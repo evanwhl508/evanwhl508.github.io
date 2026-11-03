@@ -1,4 +1,16 @@
 {
+  "products/bone-sweet-bone/index.html": {
+    "title": "Bone Sweet Bone — Covan Labs",
+    "description": "A cozy defense game for kind necromancers. Gather skeletal companions and defend your estate across four story chapters."
+  },
+  "products/bone-sweet-bone/support/index.html": {
+    "title": "Bone Sweet Bone Support — Covan Labs",
+    "description": "Help with Bone Sweet Bone, local saves, summons, progression and settings. Contact Covan Labs support."
+  },
+  "products/bone-sweet-bone/privacy/index.html": {
+    "title": "Bone Sweet Bone Privacy Policy — Covan Labs",
+    "description": "How Bone Sweet Bone handles local game progress, support messages and privacy choices. No active advertising or in-app purchases at launch."
+  },
   "products/siu-mai-roach-rumble/index.html": {
     "title": "Siu Mai Roach Rumble — Covan Labs",
     "description": "Small bites. Big defense. Meet Siu Mai Jai and his crew in a kitchen tower defense game for iPhone and iPad. Co-created by Evan & Frankie."
