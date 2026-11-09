@@ -33,7 +33,7 @@ Official sources checked: [Apple app privacy details](https://developer.apple.co
 - Deploy through the approved site release process and verify all three root URLs over HTTPS without authentication. Test support email delivery and replies separately.
 - Confirm the final release binary still matches this policy and enter the corresponding App Privacy answers in App Store Connect. Update the policy and required consent flow before enabling ads, purchases or analytics.
 - Add accessible support/privacy links inside the game if not already present; website changes do not modify the game UI.
-- Keep “Coming soon” until public availability is confirmed, then add the verified App Store download link and update the status wording.
+- Public availability confirmed on 10 November 2026: [Claw Mai on the Taiwan App Store](https://apps.apple.com/tw/app/claw-mai/id6810806954). Homepage and product-page status, English/Traditional Chinese release copy, metadata and download links are updated locally; publish through the owner-approved release process.
 - No DNS, email routing, `app-ads.txt`, store metadata, production publishing or unrelated product content was changed.
 
 ## Validation
