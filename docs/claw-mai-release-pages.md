@@ -41,3 +41,9 @@ Official sources checked: [Apple app privacy details](https://developer.apple.co
 Build with `python3 scripts/build-site.py`, then run `python3 scripts/check-site.py`. Browser QA output is under `output/playwright/claw-*.png` (ignored).
 
 Validated locally: 99 HTML pages and 3,537 local links/assets; 30 browser route/viewport combinations at 320, 390 and 1440 px. No horizontal overflow, missing images or browser errors. Keyboard skip link, mobile menu, help/privacy navigation, mailto subject and Chinese-help anchor passed. Reduced motion passed; sampled body text/link contrast ratios were 8.26:1 and 9.08:1. Desktop/mobile marketing and mobile support/privacy captures were visually reviewed. Theme 1 preservation checks passed.
+
+## Analytics privacy update — 16 November 2026
+
+Owner authorized publication after the successful Claw Mai 1.0.2 (8) TestFlight upload. The English policy and Traditional Chinese summary now describe opt-in Firebase gameplay analytics, event categories/app-instance identifiers, purposes, separate ad choices, default-off collection, no analytics IDFA/IDFV, and opt-out/reset and deletion limits. Version wording explicitly identifies 1.0.2 as being tested through TestFlight, rather than claiming a public App Store release.
+
+Checked against Claw Mai commits e2f2566/3e0068e, the packaged build-8 privacy flags, native ClawAnalytics bridge and Firebase collection-control documentation. Canonical template and generated root/theme2 policy pages are included; theme1 stays frozen. Publishing target is the existing GitHub Pages main branch at https://covanlabs.com/products/claw-mai/privacy/. No DNS, ad configuration, App Store disclosure or app release change is included.
