@@ -1,5 +1,21 @@
 # Bone Sweet Bone release pages
 
+## Current listing — 19 November 2026
+
+Version 1.0 is live on the [App Store](https://apps.apple.com/app/id6830231241),
+verified using Apple’s public lookup. Added the official store icon and product
+card to the default/theme 2 homepage, a download link to the existing product
+page, and an entry in the shared support directory. The planned 1.0.1 rewarded
+ads notice and privacy policy are retained; 1.0.1 is still awaiting review.
+Theme 1 is unchanged.
+
+Validation: site generator and checker pass (105 pages, 3,703 local links/assets).
+Desktop 1440px and mobile 390px browser checks pass: official icon loaded, no
+horizontal overflow, visible keyboard focus, keyboard Details navigation and
+reduced-motion mode. Screenshots inspected under `output/playwright/`.
+
+## Historical preparation
+
 Prepared 4 November 2026 on the current production branch base. Product routes:
 
 - Marketing: https://covanlabs.com/products/bone-sweet-bone/
